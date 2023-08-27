@@ -12,7 +12,7 @@ namespace Dota2.ShopSystem
         public int currentCategoryIndex;
         
         int maxShownItemCount;
-        int maxCategoryCount = 3;
+        int maxCategoryCount = 2;
 
         [Header("PageSize")]
         [SerializeField] CurrentPageSize pageSizeInput;
@@ -29,6 +29,7 @@ namespace Dota2.ShopSystem
             maxShopPage = Mathf.Ceil((shop.Items.Length / currentPagesize)) - 1.0f;
             RefreshUI();
         }
+
         void Update()
         {
             if (currentPagesize != pageSizeInput.currentPageSize) {
@@ -39,28 +40,45 @@ namespace Dota2.ShopSystem
             }
             
         }
+
+        public void BasicCategoryButton()
+        {
+            currentCategoryIndex = 0;
+            currentItemIndex = 0;
+            RefreshUI();
+        }
+
+        public void UpgradeCategoryButton()
+        {
+            currentCategoryIndex = 1;
+            currentItemIndex = 0;
+            RefreshUI();
+        }
+
+        public void NaturalItemCategoryButton()
+        {
+            currentCategoryIndex = 2;
+            currentItemIndex = 0;
+            RefreshUI();
+        }
+
         public void PrevItemPageButton()
         {
             if (currentShopPage == 0)
-            {
                 return;
-            }
             else
             {
                 currentShopPage--;
                 ui.ClearAllItemUIs();
                 CreateShopList();
             }
-            
         }
 
         public void NextItemPageButton()
         {
 
             if (currentShopPage == maxShopPage)
-            {
                 return;
-            }
             else
             {
                 currentShopPage++;
@@ -134,9 +152,7 @@ namespace Dota2.ShopSystem
 
                 i++;
             }
-
             ui.SetItemList(uiDataList.ToArray());
         }
-
     }
 }
