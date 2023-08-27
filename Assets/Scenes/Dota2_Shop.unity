@@ -1216,11 +1216,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentItemIndex: 0
   currentCategoryIndex: 0
-  currentShopPage: 0
   pageSizeInput: {fileID: 149773829}
   currentPagesize: 10
   ui: {fileID: 1669871368}
   shop: {fileID: 1561715985}
+  currentShopPage: 0
+  maxShopPage: 0
   categoryInfoList:
   - name: Basic
   - name: Upgrade
@@ -1310,97 +1311,97 @@ MonoBehaviour:
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
     type: 0
     count: 99
   - displayName: Gay
     description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
     type: 0
     count: 99
 --- !u!1 &1584293661
@@ -2136,6 +2137,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 348002769}
     m_Modifications:
+    - target: {fileID: 2350249393775695464, guid: 476a445acf4b4bb4c97a3f4422ad0b88, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2350249394414968752, guid: 476a445acf4b4bb4c97a3f4422ad0b88, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
