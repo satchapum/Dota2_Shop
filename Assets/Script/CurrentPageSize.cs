@@ -2,10 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/ItemListAndPagination
 namespace Dota2.ShopSystem
 {
     public class CurrentPageSize : MonoBehaviour
