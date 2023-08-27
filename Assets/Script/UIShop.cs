@@ -10,28 +10,29 @@ namespace Dota2.ShopSystem
 {
     public class UIShop : MonoBehaviour
     {
-        [Header("Category")]
-        [SerializeField] Image categoryIconImage;
-        [SerializeField] Text categoryText;
-
-        [Header("Current Item")]
-        [SerializeField] Image currentItemIconImage;
-        [SerializeField] Text descriptionText;
-
         [Header("Item List")]
         [SerializeField] UIItem itemUIPrefab;
         [SerializeField] List<UIItem> itemUIList = new List<UIItem>();
 
-        public void SetCategory(CategoryInfo info)
+        public void ClearAllItemUIs()
         {
-            categoryIconImage.sprite = info.icon;
-            categoryText.text = info.name;
+            foreach (UIItem uiItem in itemUIList)
+                Destroy(uiItem.gameObject);
+
+            itemUIList.Clear();
         }
 
-        public void SetCurrentItemInfo(ItemData data)
+        public void SetItemList(UIItem_Data[] uiDatas)
         {
-            descriptionText.text = data.description;
-            currentItemIconImage.sprite = data.icon;
+            ClearAllItemUIs();
+            foreach (var uiItemData in uiDatas)
+            {
+                var newItemUI = Instantiate(itemUIPrefab, itemUIPrefab.transform.parent, false);
+
+                newItemUI.gameObject.SetActive(true);
+                itemUIList.Add(newItemUI);
+                newItemUI.SetData(uiItemData);
+            }
         }
     }
 
@@ -39,7 +40,6 @@ namespace Dota2.ShopSystem
     public class CategoryInfo
     {
         public string name;
-        public Sprite icon;
     }
 }
 

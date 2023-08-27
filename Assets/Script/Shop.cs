@@ -22,22 +22,20 @@ namespace Dota2.ShopSystem
             //Return the result as Array not List. Because we don't want caller to modify the result afterward.
             return resultList.ToArray();
         }
-
-        [Serializable]
-        public class ItemData
-        {
-            public string displayName;
-            public string description;
-            public Sprite icon;
-            public ItemType type;
-            public int count;
-        }
-
-        public enum ItemType
-        {
-            BasicItem, UpgradeItem, NaturalItem
-        }
-    }   
+    }
+    [Serializable]
+    public class ItemData
+    {
+        public string displayName;
+        public string description;
+        public Sprite icon;
+        public ItemType type;
+        public int count;
+    }
+    public enum ItemType
+    {
+        BasicItem, UpgradeItem, NaturalItem
+    }
 }
 
 
