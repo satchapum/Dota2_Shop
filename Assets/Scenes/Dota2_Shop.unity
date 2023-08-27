@@ -1870,211 +1870,844 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemList:
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+  - displayName: Observer Ward
+    description: Plants an Observer Ward, an invisible watcher that gives ground
+      vision in a 1600 radius to your team. Lasts 6 minutes.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    count: 0
+  - displayName: Throw Grenade
+    description: Throws a grenade at the target area. Enemies in the area will take
+      50 damage on impact, be slowed by 15% and take 15 damage per second.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    count: 50
+  - displayName: Clarity
+    description: Grants 6 mana regeneration to the target for 25 seconds.  If the
+      unit is attacked by an enemy hero or Roshan, the effect is lost.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    count: 50
+  - displayName: Sentry Ward
+    description: Plants a Sentry Ward, an invisible watcher that grants True Sight,
+      the ability to see invisible enemy units and wards, to any existing allied
+      vision within a radius. Lasts 7 minutes.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    count: 50
+  - displayName: Smoke of Deceit
+    description: Turns the caster and all allied player-controlled units in a 1200
+      radius invisible, and grants 15% bonus movement speed for 45 seconds.  While
+      the caster is still disguised, any allies that come within 45 range of them
+      will also get the buff applied to them. Each smoke can only be applied once
+      to allies (can not be reapplied if smoke was broken)  Attacking, or moving
+      within 1025 range of an enemy hero or tower, will break the invisibility.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    count: 50
+  - displayName: Enchanted Mango
+    description: 'Instantly restores 100 mana. '
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    count: 65
+  - displayName: Faerie Fire
+    description: Instantly restores 85 health.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    count: 65
+  - displayName: Dust of Appearance
+    description: For 12 seconds, creates an area that reveals invisible and slows
+      heroes by 20% in an 1050 radius where the caster was standing. Invisible units
+      revealed by dust take 25 damage. The debuff effect on enemies lingers for 8s
+      after leaving the area of effect.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    count: 80
+  - displayName: Tango
+    description: Consumes a target tree to gain 7 health regeneration for 16 seconds.
+      Consuming an Ironwood Tree doubles the heal amount.  Comes with 3 charges.
+      Can be used on an allied hero to give them one Tango.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 62ce01ddca719d34ea9648c586a7cc94, type: 3}
+    count: 90
+  - displayName: Healing Salve
+    description: Grants 30 health regeneration to the target for 13 seconds.  If
+      the unit is attacked by an enemy hero or Roshan, the effect is lost.  Heals
+      for half the amount when cast on an ally.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
+    count: 100
+  - displayName: Town Portal Scroll
+    description: After channeling for 3 seconds, teleports you to a target friendly
+      building.  Double-click to teleport to your team's base fountain.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
+    count: 100
+  - displayName: Bottle
+    description: Consumes a charge to restore 110 health and 60 mana over 3 seconds.
+      If the hero is attacked by an enemy hero or Roshan, the effect is lost.  The
+      Bottle automatically refills at the fountain.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
+    count: 625
+  - displayName: 'Aghanim''s Shard '
+    description: 'Upgrades an existing ability or adds a new ability to your hero. '
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
+    count: 1400
+  - displayName: Iron Branch
+    description: 'Targets the ground to plant a happy little tree that lasts for
+      20 seconds. '
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
+    count: 50
+  - displayName: Gauntlets of Strength
+    description: 66 health and 0.3 health regeneration.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
+    count: 140
+  - displayName: Mantle of Intelligence
+    description: 36 mana, 0.15 mana regeneration and 0.3% flat base magic resistance.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
+    count: 140
+  - displayName: Slippers of Agility
+    description: 3 attack speed and 0.5 main armor.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
+    count: 140
+  - displayName: Circlet
+    description: 44 health and 0.2 health regeneration. 24 mana, 0.1 mana regeneration
+      and 0.2% flat base magic resistance.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
+    count: 155
+  - displayName: Band of Elvenskin
+    description: 6 attack speed and 1 main armor.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: d6a44ab95b0def041a7929981a2c23a1, type: 3}
+    count: 450
+  - displayName: Belt of Strength
+    description: 132 health and 0.6 health regeneration.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
+    count: 450
+  - displayName: Crown
+    description: 88 health and 0.4 health regeneration. 48 mana, 0.2 mana regeneration
+      and 0.4% flat base magic resistance.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
+    count: 450
+  - displayName: Robe of the Magi
+    description: 72 mana, 0.3 mana regeneration and 0.6% flat base magic resistance.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
+    count: 450
+  - displayName: Blade of Alacrity
+    description: 10 attack speed and 1.67 main armor.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
+    count: 1000
+  - displayName: Diadem
+    description: 132 health and 0.6 health regeneration. 72 mana, 0.3 mana regeneration
+      and 0.6% flat base magic resistance.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
+    count: 1000
+  - displayName: Ogre Axe
+    description: 220 health and 1 health regeneration.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
+    count: 1000
+  - displayName: Staff of Wizardry
+    description: 120 mana, 0.5 mana regeneration and 1% flat base magic resistance.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
+    count: 1000
+  - displayName: Quelling Blade
+    description: Increases attack damage against non-hero units by 8 for melee heroes,
+      and 4 for ranged.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
+    count: 100
+  - displayName: 'Ring of Protection '
+    description: +2 Armor
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
+    count: 175
+  - displayName: 'Infused Raindrops '
+    description: Consumes a charge to block 120 magic damage from damage instances
+      over 75 damage.  Comes with 6 charges. When the charges are gone, the item
+      disappears.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0779ad3feec52124e97114bcbb12ef13, type: 3}
+    count: 225
+  - displayName: Orb of Venom
+    description: Poisons the target, dealing 2 magical damage per second and slowing
+      movement by 13% if the equipped hero is melee, or by 4% if they are ranged.
+      Lasts for 2 seconds.
+    icon: {fileID: 0}
     type: 0
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+    count: 275
+  - displayName: Blight Stone
+    description: Your attacks reduce the target's armor by 2 for 8 seconds.
+    icon: {fileID: 0}
+    type: 0
+    count: 300
+  - displayName: Blades of Attack
+    description: +9 Attack Damage
+    icon: {fileID: 0}
+    type: 0
+    count: 450
+  - displayName: Gloves of Haste
+    description: +20 Attack Speed
+    icon: {fileID: 0}
+    type: 0
+    count: 450
+  - displayName: Chainmail
+    description: +4 Armor
+    icon: {fileID: 0}
+    type: 0
+    count: 550
+  - displayName: Quarterstaff
+    description: +10 Attack Damage , +10 Attack Speed
+    icon: {fileID: 0}
+    type: 0
+    count: 875
+  - displayName: Helm of Iron Will
+    description: +5 Health Regeneration, +6 Armor
+    icon: {fileID: 0}
+    type: 0
+    count: 975
+  - displayName: 'Blitz Knuckles '
+    description: +35 Attack Speed
+    icon: {fileID: 0}
+    type: 0
+    count: 1000
+  - displayName: Broadsword
+    description: +15 Attack Damage
+    icon: {fileID: 0}
+    type: 0
+    count: 1000
+  - displayName: Javelin
+    description: Grants each attack a 30% chance to pierce through evasion and deal
+      70 bonus magical damage.
+    icon: {fileID: 0}
+    type: 0
+    count: 1100
+  - displayName: Claymore
+    description: +20 Attack Damage
+    icon: {fileID: 0}
+    type: 0
+    count: 1450
+  - displayName: 'Mithril Hammer '
+    description: +24 Attack Damage
+    icon: {fileID: 0}
+    type: 0
+    count: 1600
+  - displayName: 'Talisman of Evasion '
+    description: Increases most heroes against physical attacks by 17.65%.
+    icon: {fileID: 0}
+    type: 0
+    count: 1300
+  - displayName: Platemail
+    description: +10 Armor
+    icon: {fileID: 0}
+    type: 0
+    count: 1400
+  - displayName: Hyperstone
+    description: +60 Attack Speed
+    icon: {fileID: 0}
+    type: 0
+    count: 2000
+  - displayName: 'Ultimate Orb '
+    description: 220 health and 1 health regeneration. 120 mana, 0.5 mana regeneration
+      and 1% flat base magic resistance.
+    icon: {fileID: 0}
+    type: 0
+    count: 2050
+  - displayName: Demon Edge
+    description: +40 Attack Damage
+    icon: {fileID: 0}
+    type: 0
+    count: 2200
+  - displayName: Eaglesong
+    description: 25 attack speed and 4.17 main armor.
+    icon: {fileID: 0}
+    type: 0
+    count: 2800
+  - displayName: Mystic Staff
+    description: 300 mana, 1.25 mana regeneration and 2.5% flat base magic resistance.
+    icon: {fileID: 0}
+    type: 0
+    count: 2800
+  - displayName: Reaver
+    description: 550 health and 2.5 health regeneration.
+    icon: {fileID: 0}
+    type: 0
+    count: 2800
+  - displayName: 'Sacred Relic '
+    description: +55 Attack Damage
+    icon: {fileID: 0}
+    type: 0
+    count: 3400
+  - displayName: 'Magic Wand '
+    description: 66 health and 0.3 health regeneration. 36 mana, 0.15 mana regeneration
+      and 0.3% flat base magic resistance. 3 attack speed and 0.5 main armor.
+    icon: {fileID: 0}
     type: 1
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+    count: 450
+  - displayName: Bracer
+    description: 110/220 health and 0.5/1 health regeneration. 24/48 mana and 0.1/0.2
+      mana regeneration. 2/4 attack speed and 0.33/0.67 main armor.
+    icon: {fileID: 0}
     type: 1
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+    count: 505
+  - displayName: 'Null Talisman '
+    description: 44/88 health and 0.2/0.4 health regeneration. 60/120 mana and 0.25/0.5
+      mana regeneration. 2/4 attack speed and 0.33/0.67 main armor.
+    icon: {fileID: 0}
     type: 1
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+    count: 505
+  - displayName: 'Wraith Band '
+    description: 44/88 health and 0.2/0.4 health regeneration. 24/48 mana and 0.1/0.2
+      mana regeneration. 5/10 attack speed and 0.83/1.67 main armor.
+    icon: {fileID: 0}
     type: 1
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+    count: 505
+  - displayName: 'Soul Ring '
+    description: 132 health and 0.6 health regeneration.
+    icon: {fileID: 0}
     type: 1
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+    count: 805
+  - displayName: 'Orb of Corrosion '
+    description: Dealing 3 damage per second, reducing armor by 3, and slowing movement
+      speed by 13% if the equipped hero is melee, or by 4% if they are ranged.  Lasts
+      3 seconds.
+    icon: {fileID: 0}
     type: 1
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+    count: 925
+  - displayName: 'Falcon Blade '
+    description: +200 Health ,+1.8 Mana Regeneration ,+14 Attack Damage
+    icon: {fileID: 0}
     type: 1
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+    count: 1125
+  - displayName: Perseverance
+    description: +6.5 Health Regeneration , +2.25 Mana Regeneration
+    icon: {fileID: 0}
     type: 1
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+    count: 1400
+  - displayName: 'Power Treads '
+    description: +55 Melee Move Speed ,+45 Ranged Move Speed ,+25 Attack Speed
+    icon: {fileID: 0}
     type: 1
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+    count: 1400
+  - displayName: 'Oblivion Staff '
+    description: 120 mana, 0.5 mana regeneration and 1% flat base magic resistance.
+    icon: {fileID: 0}
     type: 1
-    count: 99
-  - displayName: Gay
-    description: gaygaygay
-    icon: {fileID: 21300000, guid: 0ccc508108fa6ed4fa11b4a467d7f609, type: 3}
+    count: 1500
+  - displayName: 'Phase Boots '
+    description: +4 Armor , +50 Move Speed
+    icon: {fileID: 0}
     type: 1
-    count: 99
+    count: 450
+  - displayName: 'Mask of Madness '
+    description: +10 Attack Damage ,+10 Attack Speed
+    icon: {fileID: 0}
+    type: 1
+    count: 1775
+  - displayName: 'Hand of Midas '
+    description: +40 Attack Speed
+    icon: {fileID: 0}
+    type: 1
+    count: 2200
+  - displayName: 'Boots of Travel '
+    description: 110 Move Speed
+    icon: {fileID: 0}
+    type: 1
+    count: 2500
+  - displayName: 'Helm of the Dominator '
+    description: 132 health and 0.6 health regeneration. 72 mana, 0.3 mana regeneration
+      and 0.6% flat base magic resistance. 6 attack speed and 1 main armor.
+    icon: {fileID: 0}
+    type: 1
+    count: 2625
+  - displayName: 'Moon Shard '
+    description: +140 Attack Speed
+    icon: {fileID: 0}
+    type: 1
+    count: 4000
+  - displayName: Buckler
+    description: Grants 2 armor to player units.
+    icon: {fileID: 0}
+    type: 1
+    count: 425
+  - displayName: 'Headdress '
+    description: 'Grants 2 health regeneration to allies. '
+    icon: {fileID: 0}
+    type: 1
+    count: 425
+  - displayName: 'Ring of Basilius '
+    description: 'Grants 1 mana regeneration to allies. '
+    icon: {fileID: 0}
+    type: 1
+    count: 425
+  - displayName: 'Urn of Shadows '
+    description: 44 health and 0.2 health regeneration. 24 mana, 0.1 mana regeneration
+      and 0.2% flat base magic resistance. 2 attack speed and 0.33 main armor.
+    icon: {fileID: 0}
+    type: 1
+    count: 880
+  - displayName: 'Tranquil Boots '
+    description: Whenever you attack a hero or are attacked by any unit, the bonus
+      14 HP regen is lost and the movement speed bonus is reduced to 40 for 13 seconds.
+    icon: {fileID: 0}
+    type: 1
+    count: 925
+  - displayName: 'Medallion of Courage '
+    description: If cast on an ally, grants them the 6 armor, and removing it from
+      the caster.  If cast on an enemy, reduces 6 armor on both the enemy and the
+      caster.  Cannot target spell immune enemies.
+    icon: {fileID: 0}
+    type: 1
+    count: 1025
+  - displayName: 'Arcane Boots '
+    description: +250 Mana ,+45 Move Speed
+    icon: {fileID: 0}
+    type: 1
+    count: 1300
+  - displayName: Pavise
+    description: 'When cast on an ally, grants them a barrier that absorbs 300 physical
+      damage. Duration: 8s.'
+    icon: {fileID: 0}
+    type: 1
+    count: 1400
+  - displayName: 'Drum of Endurance '
+    description: 154 health and 0.7 health regeneration. 84 mana, 0.35 mana regeneration
+      and 0.7% flat base magic resistance.
+    icon: {fileID: 0}
+    type: 1
+    count: 1650
+  - displayName: Mekansm
+    description: '+4 Armor , Heals 275 health to allied units in a 1200 radius. '
+    icon: {fileID: 0}
+    type: 1
+    count: 1775
+  - displayName: 'Holy Locket '
+    description: 220 health and 1 health regeneration. 120 mana, 0.5 mana regeneration
+      and 1% flat base magic resistance. 10 attack speed and 1.67 main armor.
+    icon: {fileID: 0}
+    type: 1
+    count: 2400
+  - displayName: 'Vladmir''s Offering '
+    description: Grants 20% lifesteal, 18% bonus damage, 1.75 mana regeneration,
+      and 3 armor to nearby allies. Lifesteal from creeps is reduced by 50%
+    icon: {fileID: 0}
+    type: 1
+    count: 2450
+  - displayName: 'Spirit Vessel '
+    description: 132 health and 0.6 health regeneration. 72 mana, 0.3 mana regeneration
+      and 0.6% flat base magic resistance. 6 attack speed and 1 main armor.
+    icon: {fileID: 0}
+    type: 1
+    count: 2780
+  - displayName: 'Pipe of Insight '
+    description: +6 Health Regeneration , +20% Magic Resistance
+    icon: {fileID: 0}
+    type: 1
+    count: 3375
+  - displayName: 'Boots of Bearing '
+    description: 176 health and 0.8 health regeneration. 96 mana, 0.4 mana regeneration
+      and 0.8% flat base magic resistance.
+    icon: {fileID: 0}
+    type: 1
+    count: 4275
+  - displayName: 'Guardian Greaves '
+    description: +250 Mana , +4 Armor , +50 Move Speed
+    icon: {fileID: 0}
+    type: 1
+    count: 4950
+  - displayName: 'Crystalys '
+    description: '+32 Attack Damage,Grants each attack a 30% chance to deal 160%
+      damage. '
+    icon: {fileID: 0}
+    type: 1
+    count: 1900
+  - displayName: 'Meteor Hammer '
+    description: After a successful channel, summons a meteor that strikes a 400
+      AoE, stunning enemies for 0.5 seconds and dealing impact damage. Continues
+      to deal damage over time to enemy units and buildings for 6 seconds. Non-building
+      units are also slowed for 20% for the duration of the burn.
+    icon: {fileID: 0}
+    type: 1
+    count: 2400
+  - displayName: 'Armlet of Mordiggian '
+    description: When active, Unholy Strength grants +35 damage, +25 strength and
+      +4 armor, but drains 45 health per second.
+    icon: {fileID: 0}
+    type: 1
+    count: 2500
+  - displayName: 'Skull Basher '
+    description: 'Grants melee heroes a 25% chance on hit to stun the target for
+      1.2 seconds and deal 100 bonus physical damage. Bash chance for ranged heroes
+      is 10%. '
+    icon: {fileID: 0}
+    type: 1
+    count: 2875
+  - displayName: 'Shadow Blade '
+    description: Makes you invisible for 14 seconds, or until you attack or cast
+      a spell. While Shadow Walk is active, you move 20% faster and can move through
+      units.  If attacking to end the invisibility, you gain 175 bonus physical damage
+      on that attack.
+    icon: {fileID: 0}
+    type: 1
+    count: 3000
+  - displayName: 'Desolator '
+    description: Your attacks reduce the target's armor by 6 for 7 seconds.
+    icon: {fileID: 0}
+    type: 1
+    count: 3500
+  - displayName: 'Battle Fury '
+    description: Increases attack damage against non-hero units by 10 for melee heroes,
+      and 5 for ranged.
+    icon: {fileID: 0}
+    type: 1
+    count: 4100
+  - displayName: Nullifier
+    description: Dispels the target and applies a debuff for 5 seconds. Continuously
+      dispels the target.
+    icon: {fileID: 0}
+    type: 1
+    count: 4375
+  - displayName: 'Ethereal Blade '
+    description: Converts the target unit to ethereal form, rendering them immune
+      to physical damage, but unable to attack and 40% more vulnerable to magic damage.
+    icon: {fileID: 0}
+    type: 1
+    count: 4650
+  - displayName: Radiance
+    description: When active, scorches enemies for 60 magical damage per second,
+      and causes them to miss 15% of their attacks. Illusions deal 35 magical damage
+      per second.
+    icon: {fileID: 0}
+    type: 1
+    count: 4700
+  - displayName: 'Monkey King Bar '
+    description: Grants each attack a 80% chance to pierce through evasion and deal
+      70 bonus magical damage.
+    icon: {fileID: 0}
+    type: 1
+    count: 4900
+  - displayName: Butterfly
+    description: 35 attack speed and 5.83 main armor.
+    icon: {fileID: 0}
+    type: 1
+    count: 4975
+  - displayName: 'Daedalus '
+    description: 'Grants each attack a 30% chance to deal 225% damage. '
+    icon: {fileID: 0}
+    type: 1
+    count: 5100
+  - displayName: 'Silver Edge '
+    description: Makes you invisible for 14 seconds, or until you attack or cast
+      a spell. While invisible, you move 25% faster and can move through units.
+    icon: {fileID: 0}
+    type: 1
+    count: 5450
+  - displayName: 'Divine Rapier '
+    description: +350 Attack Damage
+    icon: {fileID: 0}
+    type: 1
+    count: 5600
+  - displayName: Disperser
+    description: Affects all units in a 350 AoE around the target. All enemies around
+      the target are slowed for 4 seconds.
+    icon: {fileID: 0}
+    type: 1
+    count: 5700
+  - displayName: 'Abyssal Blade '
+    description: Stuns a target enemy unit for 1.6 seconds.
+    icon: {fileID: 0}
+    type: 1
+    count: 6250
+  - displayName: Bloodthorn
+    description: Silences a target for 5 seconds. At the end of the silence, an additional
+      60% of all damage taken during the silence will be dealt to the target as magical
+      damage.
+    icon: {fileID: 0}
+    type: 1
+    count: 6800
+  - displayName: 'Arcane Ring '
+    description: 'Restores 75 mana to all nearby allies. '
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Broom Handle '
+    description: +4 Armor , +8 Attack Damage , +50 Melee Attack Range
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Duelist Gloves '
+    description: 'Grants 20 attack speed as long as there are enemy heroes within
+      1200 units. '
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Faded Broach '
+    description: +150 Mana , +15 Move Speed
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Fairy''s Trinket '
+    description: +75 Health , +5% Mana Loss Reduction , +5% Spell Damage Amp
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Lance of Pursuit '
+    description: +200 Mana , Attacking from behind slows enemies by 16% (8% if Ranged)
+      and deals +15 more Damage. Slows lasts for 2 second.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Occult Bracelet '
+    description: Each time the wearer is attacked they gain a stack of 0.5 mana regen,
+      up to 5 stacks. Stacks last for 10 seconds.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Pig Pole '
+    description: 'Turns your hero into a critter for 4 seconds and gives them +10%
+      Movement Speed. '
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Seeds of Serenity '
+    description: Target the ground with a 400 radius. Provides +10 health regeneration
+      to all allied units while they're in the area of effect.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Spark of Courage '
+    description: Provides 18 damage when the owner is above 50% health, and 7 armor
+      when they are below that threshold.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Trusty Shovel '
+    description: Channel for 1 second. Can find a Bounty Rune, a Flask, an Enchanted
+      Mango, or a friendly Kobold.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Tumbler''s Toy '
+    description: +200 Mana , Propels your hero forward 300 units. Tumbler's Toy gets
+      disabled for 3 seconds if its owner receives damage from a player source.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Bullwhip '
+    description: Grants 18% movement speed when cast on allies, and slows by 18%
+      when cast on enemies. Lasts 4 seconds.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Dragon Scale '
+    description: Causes attacks to burn the enemy, dealing 22 damage per second for
+      3 seconds. Affects buildings.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Eye of the Vizier '
+    description: -15% Mana , +1.25 Mana Regeneration , +125 Cast Range
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Gossamer Cape '
+    description: 'Automatically dodge the next attack from a hero. '
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Grove Bow '
+    description: 'Reduces magic resistance of the attacked enemy by 15%. '
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Orb of Destruction '
+    description: Attacks reduce the target's armor and movement speed. Slow amount
+      varies based on whether the wearer is melee or ranged.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Philosopher''s Stone '
+    description: +200 Mana , -30 Attack Damage , +75 Gold Gold/min
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Ring of Aquila '
+    description: 66 health and 0.3 health regeneration. 36 mana, 0.15 mana regeneration
+      and 0.3% flat base magic resistance.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Specialist''s Array '
+    description: 154 health and 0.7 health regeneration. 84 mana, 0.35 mana regeneration
+      and 0.7% flat base magic resistance. 7 attack speed and 1.17 main armor.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Ceremonial Robe '
+    description: '+300 Mana , Lowers enemy Status Resistance by 10% and Magic Resistance
+      by 10%. '
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Cloak of Flames '
+    description: Burns enemy units for 45 damage per second. Illusions deal 30 damage
+      per second.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Dandelion Amulet '
+    description: 'Block 300 magic damage from damage instances over 75 damage '
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Defiant Shell '
+    description: 'When attacked, the hero counter-attacks a target within their attack
+      range. Returned Damage: 100%'
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Elven Tunic '
+    description: +16% Evasion , +7% Move Speed , +26 Attack Speed
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Enchanted Quiver '
+    description: Empowers your next attack with 250 bonus magical damage and True
+      Strike. Ranged Attackers have , +350 bonus range for the attack.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Psychic Headband '
+    description: 'Grants 15% intelligence bonus. Intelligence Bonus: 15%'
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Quickening Charm '
+    description: 'Reduces the cooldown time of all spells and items by 10% Cooldown
+      Reduction: 10%'
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Titan Sliver '
+    description: +16% Magic Resistance , +10% Status Resistance , +20% Attack Damage
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Vindicator''s Axe '
+    description: +20% Slow Resistance , +35 Attack Speed
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Ascetic''s Cap '
+    description: +250 Health , +20 Health Regeneration
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Havoc Hammer '
+    description: +16 Strength , +16 Attack Damage
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Martyr''s Plate '
+    description: +5 Health Regeneration , +25% Magic Resistance
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Mind Breaker '
+    description: +45 Attack Damage , +30 Attack Speed
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Ninja Gear '
+    description: +20 Agility , +20 Move Speed
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Penta-Edged Sword '
+    description: +45 Attack Damage , +100 Melee Attack Range
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Spell Prism '
+    description: +5 Strength , +5 Agility , +5 Intelligence , +2 Mana Regeneration
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: Stormcrafter
+    description: +4 Mana Regeneration , +35 Move Speed
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Timeless Relic '
+    description: +20% Debuff Duration Amp , +15% Spell Damage Amp
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Trickster Cloak '
+    description: +17% Evasion , +17% Magic Resistance
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Arcanist''s Armor '
+    description: +5 Armor , +20% Magic Resistance
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Book of Shadows '
+    description: +13 Strength , +13 Agility , +13 Intelligence , +400 Night Vision
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Book of the Dead '
+    description: +25 Strength , +25 Intelligence
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Ex Machina '
+    description: +20 Armor , Reset the cooldowns on all items (except Refresher Orb).
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Fallen Sky '
+    description: +25 Strength , +15 Intelligence , +15 Health Regeneration , +10
+      Mana Regeneration
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Force Boots '
+    description: +30 Health Regeneration , +115 Move Speed
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Giant''s Ring '
+    description: +35 Strength , +50 Move Speed
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Pirate Hat '
+    description: +15 Move Speed , +150 Attack Speed
+    icon: {fileID: 0}
+    type: 2
+    count: 0
+  - displayName: 'Stygian Desolator '
+    description: +60 Attack Damage , Your attacks reduce the target's armor by 10
+      for 7 seconds.
+    icon: {fileID: 0}
+    type: 2
+    count: 0
 --- !u!1 &1584293661
 GameObject:
   m_ObjectHideFlags: 0
