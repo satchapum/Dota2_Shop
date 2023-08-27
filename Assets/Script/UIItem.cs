@@ -10,12 +10,12 @@ namespace Dota2.ShopSystem
     public class UIItem : MonoBehaviour
     {
         [SerializeField] Image itemImage;
-        [SerializeField] TextMeshPro countText;
+        [SerializeField] TMP_Text countText;
 
         public void SetData(UIItem_Data data)
         {
             itemImage.sprite = data.itemData.icon;
-            countText.text = "X " + data.itemData.count;
+            countText.text = "" + data.itemData.count;
         }
     }
     public class UIItem_Data
