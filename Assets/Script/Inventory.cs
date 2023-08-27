@@ -37,10 +37,7 @@ namespace Dota2.ShopSystem
 
     public enum ItemType
     {
-        PokeBalls,
-        Items,
-        KeyItems,
-        Others
+        BasicItem, UpgradeItem, NaturalItem
     }
 }
 
