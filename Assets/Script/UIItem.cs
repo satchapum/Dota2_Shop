@@ -8,7 +8,7 @@ using TMPro;
 
 namespace Dota2.ShopSystem
 {
-    public class UIItem : MonoBehaviour, IPointerClickHandler, IClickable, IPointerExitHandler, IPointerEnterHandler
+    public class UIItem : MonoBehaviour//, IPointerClickHandler, IClickable, IPointerExitHandler, IPointerEnterHandler
     {
         [SerializeField] Image itemImage;
         [SerializeField] TMP_Text countText;
@@ -19,7 +19,7 @@ namespace Dota2.ShopSystem
             itemImage.sprite = data.itemData.icon;
             countText.text = "" + data.itemData.count;
         }
-        public void OnPointerClick(PointerEventData eventData)
+        /*public void OnPointerClick(PointerEventData eventData)
         {
             throw new System.NotImplementedException();
         }
@@ -32,7 +32,7 @@ namespace Dota2.ShopSystem
         public void OnPointerExit(PointerEventData eventData)
         {
             uiShop.HideItemDescription();
-        }
+        }*/
     }
         public class UIItem_Data
         {
