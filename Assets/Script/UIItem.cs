@@ -26,7 +26,7 @@ namespace Dota2.ShopSystem
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            uiShop.ShowItemDescription(transform.position);
+           uiShop.ShowItemDescription(transform.position);
         }
 
         public void OnPointerExit(PointerEventData eventData)

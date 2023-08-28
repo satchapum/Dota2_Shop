@@ -22,6 +22,11 @@ namespace Dota2.ShopSystem
             //Return the result as Array not List. Because we don't want caller to modify the result afterward.
             return resultList.ToArray();
         }
+
+        public string GetDescription()
+        {
+            return "Item";
+        }
     }
     [Serializable]
     public class ItemData
