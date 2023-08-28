@@ -13,7 +13,9 @@ namespace Dota2.ShopSystem
         [Header("Item List")]
         [SerializeField] UIItem itemUIPrefab;
         [SerializeField] List<UIItem> itemUIList = new List<UIItem>();
- 
+        [SerializeField] GameObject description;
+
+
         void Start()
         {
             //Make sure to hide original blueprint of UIItem at the start.
@@ -39,6 +41,17 @@ namespace Dota2.ShopSystem
                 newItemUI.SetData(uiItemData);
             }
         }
+
+        public void ShowItemDescription(Vector3 position)
+        {
+            description.SetActive(true);
+            description.transform.position = position;
+        }
+
+        public void HideItemDescription()
+        {
+            description.SetActive(false);
+        }
     }
 
     [Serializable]
@@ -46,5 +59,6 @@ namespace Dota2.ShopSystem
     {
         public string name;
     }
+
 }
 
