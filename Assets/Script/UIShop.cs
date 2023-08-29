@@ -13,11 +13,8 @@ namespace Dota2.ShopSystem
         [Header("Item List")]
         [SerializeField] UIItem itemUIPrefab;
         [SerializeField] List<UIItem> itemUIList = new List<UIItem>();
-<<<<<<< HEAD
-        //[SerializeField] GameObject description;
 
-=======
->>>>>>> origin/ItemListAndPagination
+        [SerializeField] GameObject description;
 
         void Start()
         {
@@ -47,7 +44,7 @@ namespace Dota2.ShopSystem
             }
         }
 
-        /*public void ShowItemDescription(Vector3 position)
+        public void ShowItemDescription(Vector3 position)
         {
             description.SetActive(true);
             description.transform.position = position;
@@ -56,7 +53,7 @@ namespace Dota2.ShopSystem
         public void HideItemDescription()
         {
             description.SetActive(false);
-        }*/
+        }
     }
 
     [Serializable]
