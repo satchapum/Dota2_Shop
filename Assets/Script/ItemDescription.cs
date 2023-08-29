@@ -15,7 +15,7 @@ namespace Dota2.ShopSystem
         public TMP_Text itemStats;
         public TMP_Text itemUsing;
 
-        void OnMouseEnter()
+        /*void OnMouseEnter()
         {
             if (textstatus == "off") 
             { 
@@ -37,7 +37,7 @@ namespace Dota2.ShopSystem
             {
                 textstatus="off";
             }
-        }
+        }*/
 
     }
 
