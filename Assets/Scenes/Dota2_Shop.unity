@@ -1873,13 +1873,13 @@ MonoBehaviour:
   - displayName: Observer Ward
     description: Plants an Observer Ward, an invisible watcher that gives ground
       vision in a 1600 radius to your team. Lasts 6 minutes.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: a03b852be0df1c849b65380ac07676fc, type: 3}
     type: 0
     count: 0
   - displayName: Throw Grenade
     description: Throws a grenade at the target area. Enemies in the area will take
       50 damage on impact, be slowed by 15% and take 15 damage per second.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: adc810c06f414e64f80830493c1abf7d, type: 3}
     type: 0
     count: 50
   - displayName: Clarity
@@ -3792,6 +3792,22 @@ PrefabInstance:
     - target: {fileID: 2350249394414968752, guid: 476a445acf4b4bb4c97a3f4422ad0b88, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350249394414968753, guid: 476a445acf4b4bb4c97a3f4422ad0b88, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350249394414968753, guid: 476a445acf4b4bb4c97a3f4422ad0b88, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350249394414968753, guid: 476a445acf4b4bb4c97a3f4422ad0b88, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2350249394414968753, guid: 476a445acf4b4bb4c97a3f4422ad0b88, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2350249394414968755, guid: 476a445acf4b4bb4c97a3f4422ad0b88, type: 3}
       propertyPath: m_Name
