@@ -5,6 +5,7 @@ using UnityEngine;
 using static UnityEditor.Progress;
 using UnityEngine.UI;
 using static Dota2.ShopSystem.Shop;
+using UnityEngine.EventSystems;
 
 namespace Dota2.ShopSystem
 {
