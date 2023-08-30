@@ -6,6 +6,7 @@ using static UnityEditor.Progress;
 using UnityEngine.UI;
 using static Dota2.ShopSystem.Shop;
 using UnityEngine.EventSystems;
+using TMPro;
 
 namespace Dota2.ShopSystem
 {
@@ -16,6 +17,10 @@ namespace Dota2.ShopSystem
         [SerializeField] List<UIItem> itemUIList = new List<UIItem>();
 
         [SerializeField] GameObject description;
+        [SerializeField] TMP_Text nameText;
+        [SerializeField]TMP_Text priceItem;
+        [SerializeField] TMP_Text itemStats;
+        [SerializeField] TMP_Text itemUsing;
 
         void Start()
         {

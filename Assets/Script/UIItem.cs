@@ -13,11 +13,25 @@ namespace Dota2.ShopSystem
         [SerializeField] Image itemImage;
         [SerializeField] TMP_Text countText;
         [SerializeField] UIShop uiShop;
+        [SerializeField] ItemData itemData;
+
+        [SerializeField] GameObject description;
+        [SerializeField] TMP_Text nameText;
+        [SerializeField] TMP_Text priceItem;
+        [SerializeField] TMP_Text itemStats;
+        [SerializeField] TMP_Text itemUsing;
 
         public void SetData(UIItem_Data data)
         {
             itemImage.sprite = data.itemData.icon;
             countText.text = "" + data.itemData.count;
+            foreach(var description in data.itemData.description) 
+            { 
+                if(description == itemData.description[description])
+                {
+                    itemData = data.itemData;
+                }
+            }
         }
         public void OnPointerClick(PointerEventData eventData)
         {
@@ -26,7 +40,8 @@ namespace Dota2.ShopSystem
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-           uiShop.ShowItemDescription(transform.position);
+
+            uiShop.ShowItemDescription(transform.position);
             Debug.Log("Enter");
         }
 

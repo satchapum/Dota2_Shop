@@ -10,18 +10,20 @@ namespace Dota2.ShopSystem
         public ItemData[] Items => itemList.ToArray();
         [SerializeField] List<ItemData> itemList = new List<ItemData>();
             public ItemData[] GetItemsByType(ItemType targetType)
-        {
-            //Create a list that will hold all the items that matched the targetType
-            var resultList = new List<ItemData>();
-            foreach (var itemData in itemList)
             {
-                if (itemData.type == targetType)
-                    resultList.Add(itemData);
+                //Create a list that will hold all the items that matched the targetType
+                var resultList = new List<ItemData>();
+                foreach (var itemData in itemList)
+                {
+                    if (itemData.type == targetType)
+                        resultList.Add(itemData);
+                }
+
+                //Return the result as Array not List. Because we don't want caller to modify the result afterward.
+                return resultList.ToArray();
             }
 
-            //Return the result as Array not List. Because we don't want caller to modify the result afterward.
-            return resultList.ToArray();
-        }
+
     }
     [Serializable]
     public class ItemData
