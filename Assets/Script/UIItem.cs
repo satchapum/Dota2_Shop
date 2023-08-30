@@ -15,30 +15,28 @@ namespace Dota2.ShopSystem
         [SerializeField] UIShop uiShop;
         [SerializeField] ItemData itemData;
 
-        [SerializeField] GameObject description;
+        [SerializeField] Image iconItem;
         [SerializeField] TMP_Text nameText;
-        [SerializeField] TMP_Text priceItem;
-        [SerializeField] TMP_Text itemStats;
+        [SerializeField] TMP_Text description;
+        [SerializeField] TMP_Text price;
 
+        UIItem_Data itemDescription;
         public void SetData(UIItem_Data data)
         {
             itemImage.sprite = data.itemData.icon;
             countText.text = "" + data.itemData.count;
-            foreach(var description in data.itemData.description) 
-            { 
-                if(description == itemData.description[description])
-                {
-                    itemData = data.itemData;
-                }
-            }
-        }
-        public void OnPointerClick(PointerEventData eventData)
-        {
-            throw new System.NotImplementedException();
+            itemDescription = data;
         }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
+            if (eventData.pointerEnter.transform.name == itemDescription.itemData.displayName)
+            {
+                iconItem.sprite = itemDescription.itemData.icon;
+                nameText.text = itemDescription.itemData.displayName;
+                description.text = itemDescription.itemData.description;
+                price.text = itemDescription.itemData.count.ToString();
+            }
             uiShop.ShowItemDescription(transform.position);
             Debug.Log("Enter");
         }
@@ -48,15 +46,20 @@ namespace Dota2.ShopSystem
             uiShop.HideItemDescription();
             Debug.Log("Exit");
         }
-    }
-        public class UIItem_Data
-        {
-            public ItemData itemData;
 
-            public UIItem_Data(ItemData itemData)
-            {
-                this.itemData = itemData;
-            }
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            throw new System.NotImplementedException();
         }
-    
+    }
+    public class UIItem_Data
+    {
+        public ItemData itemData;
+
+        public UIItem_Data(ItemData itemData)
+        {
+            this.itemData = itemData;
+        }
+    }
+
 }

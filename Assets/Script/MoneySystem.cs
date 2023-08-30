@@ -1,41 +1,34 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 namespace Dota2.ShopSystem
 {
 
-    public class MoneySystem : MonoBehaviour
+    public class MoneySystem : MonoBehaviour ,IClickable
     {
 
         [SerializeField] TMP_Text moneyText;
         [SerializeField] int moneyCount = 0;
-        [SerializeField] int countNumber = 5;
-
-        protected float Timer;
-        // Start is called before the first frame update
 
         void Start () 
         {
             MoneyUI();
         }
-
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            throw new System.NotImplementedException(); //แก้ตรงนี้อันนี้เวลากดแล้วจะทำให้เกิดอะไร
+        }
         void MoneyCounting()
         {
-            if(countNumber > 0) 
-            { 
-                moneyCount = moneyCount + 100;
-                MoneyUI();
-
-                countNumber--;
-            }
-
+            //ดึงค่าเงินมาจากตัวShopเพื่อเก็บเงิน
         }
 
         void MoneyUI()
         {
-            moneyText.text = "Gold : " + moneyCount;
+            moneyText.text = "Gold : " + moneyCount; //uiเงิน
         }
     }
 

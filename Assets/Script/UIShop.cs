@@ -17,14 +17,9 @@ namespace Dota2.ShopSystem
         [SerializeField] List<UIItem> itemUIList = new List<UIItem>();
 
         [SerializeField] GameObject description;
-        [SerializeField] TMP_Text nameText;
-        [SerializeField]TMP_Text priceItem;
-        [SerializeField] TMP_Text itemStats;
-        [SerializeField] TMP_Text itemUsing;
 
         void Start()
         {
-            //Make sure to hide original blueprint of UIItem at the start.
             itemUIPrefab.gameObject.SetActive(false);
         }
         public void ClearAllItemUIs()
