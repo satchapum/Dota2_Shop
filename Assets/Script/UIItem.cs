@@ -19,7 +19,6 @@ namespace Dota2.ShopSystem
         [SerializeField] TMP_Text nameText;
         [SerializeField] TMP_Text priceItem;
         [SerializeField] TMP_Text itemStats;
-        [SerializeField] TMP_Text itemUsing;
 
         public void SetData(UIItem_Data data)
         {
@@ -40,7 +39,6 @@ namespace Dota2.ShopSystem
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-
             uiShop.ShowItemDescription(transform.position);
             Debug.Log("Enter");
         }
