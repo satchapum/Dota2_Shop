@@ -5,6 +5,8 @@ using UnityEngine;
 using static UnityEditor.Progress;
 using UnityEngine.UI;
 using static Dota2.ShopSystem.Shop;
+using UnityEngine.EventSystems;
+using TMPro;
 
 namespace Dota2.ShopSystem
 {
@@ -13,7 +15,13 @@ namespace Dota2.ShopSystem
         [Header("Item List")]
         [SerializeField] UIItem itemUIPrefab;
         [SerializeField] List<UIItem> itemUIList = new List<UIItem>();
- 
+
+        [SerializeField] GameObject description;
+        [SerializeField] TMP_Text nameText;
+        [SerializeField]TMP_Text priceItem;
+        [SerializeField] TMP_Text itemStats;
+        [SerializeField] TMP_Text itemUsing;
+
         void Start()
         {
             //Make sure to hide original blueprint of UIItem at the start.
@@ -37,7 +45,20 @@ namespace Dota2.ShopSystem
                 newItemUI.gameObject.SetActive(true);
                 itemUIList.Add(newItemUI);
                 newItemUI.SetData(uiItemData);
+
+                newItemUI.name = uiItemData.itemData.displayName;
             }
+        }
+
+        public void ShowItemDescription(Vector3 position)
+        {
+            description.SetActive(true);
+            description.transform.position = position;
+        }
+
+        public void HideItemDescription()
+        {
+            description.SetActive(false);
         }
     }
 
@@ -46,5 +67,6 @@ namespace Dota2.ShopSystem
     {
         public string name;
     }
+
 }
 

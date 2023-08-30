@@ -8,8 +8,7 @@ namespace Dota2.ShopSystem
 
     public class ItemListPresenter : MonoBehaviour
     {
-        public int currentItemIndex;
-        public int currentCategoryIndex;
+        int currentCategoryIndex;
         
         int maxShownItemCount;
         int maxCategoryCount = 2;
@@ -26,7 +25,7 @@ namespace Dota2.ShopSystem
 
         void Start()
         {
-            maxShopPage = Mathf.Ceil((shop.Items.Length / currentPagesize)) - 1.0f;
+            maxShopPage = Mathf.Ceil((shop.GetItemsByType((ItemType)currentCategoryIndex).Length / currentPagesize)) - 1.0f;
             RefreshUI();
         }
 
@@ -35,7 +34,7 @@ namespace Dota2.ShopSystem
             if (currentPagesize != pageSizeInput.currentPageSize) {
                 currentPagesize = pageSizeInput.currentPageSize;
                 currentShopPage = 0.0f;
-                maxShopPage = Mathf.Ceil((shop.Items.Length / currentPagesize)) - 1.0f;
+                maxShopPage = Mathf.Ceil((shop.GetItemsByType((ItemType)currentCategoryIndex).Length / currentPagesize)) - 1.0f;
                 RefreshUI();
             }
             
@@ -43,22 +42,22 @@ namespace Dota2.ShopSystem
 
         public void BasicCategoryButton()
         {
+            currentShopPage = 0;
             currentCategoryIndex = 0;
-            currentItemIndex = 0;
             RefreshUI();
         }
 
         public void UpgradeCategoryButton()
         {
+            currentShopPage = 0;
             currentCategoryIndex = 1;
-            currentItemIndex = 0;
             RefreshUI();
         }
 
         public void NaturalItemCategoryButton()
         {
+            currentShopPage = 0;
             currentCategoryIndex = 2;
-            currentItemIndex = 0;
             RefreshUI();
         }
 
@@ -70,7 +69,7 @@ namespace Dota2.ShopSystem
             {
                 currentShopPage--;
                 ui.ClearAllItemUIs();
-                CreateShopList();
+                RefreshUI();
             }
         }
 
@@ -83,39 +82,8 @@ namespace Dota2.ShopSystem
             {
                 currentShopPage++;
                 ui.ClearAllItemUIs();
-                CreateShopList();
+                RefreshUI();
             }
-        }
-        void CreateShopList()
-        {
-            var currentCategoryInfo = categoryInfoList[currentCategoryIndex];
-
-            var currentCategory = (ItemType)currentCategoryIndex;
-
-            var itemsToDisplay = shop.GetItemsByType(currentCategory);
-            maxShownItemCount = itemsToDisplay.Length;
-
-            if (maxShownItemCount <= 0)
-            {
-                ui.ClearAllItemUIs();
-                return;
-            }
-            var uiDataList = new List<UIItem_Data>();
-
-            var startIndexToDisplay = currentShopPage * currentPagesize;
-            var endIndexToDisplay = startIndexToDisplay + currentPagesize;
-
-            var i = 0;
-            foreach (var item in itemsToDisplay)
-            {
-                if (i >= startIndexToDisplay && i < endIndexToDisplay)
-                {
-                    uiDataList.Add(new UIItem_Data(item));
-                }
-
-                i++;
-            }
-            ui.SetItemList(uiDataList.ToArray());
         }
 
         [ContextMenu(nameof(RefreshUI))]
@@ -134,12 +102,9 @@ namespace Dota2.ShopSystem
                 ui.ClearAllItemUIs();
                 return;
             }
-            var currentItem = itemsToDisplay[currentItemIndex];
-
             var uiDataList = new List<UIItem_Data>();
 
-            var currentPageIndex = currentItemIndex / currentPagesize;
-            var startIndexToDisplay = currentPageIndex * currentPagesize;
+            var startIndexToDisplay = currentShopPage * currentPagesize;
             var endIndexToDisplay = startIndexToDisplay + currentPagesize;
 
             var i = 0;
