@@ -1901,7 +1901,7 @@ MonoBehaviour:
   - displayName: Clarity
     description: Grants 6 mana regeneration to the target for 25 seconds.  If the
       unit is attacked by an enemy hero or Roshan, the effect is lost.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: b2404facc51f0fe479eb5ab226bddcff, type: 3}
     type: 0
     count: 50
   - displayName: Sentry Ward
