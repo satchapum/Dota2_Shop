@@ -16,7 +16,7 @@ namespace Dota2.ShopSystem
                 
         void Update()
         {
-            moneyText.text = "Gold : " + moneyCount; //uiเงิน
+            moneyText.text = "Gold : " + moneyCount; 
         }
 
         
