@@ -2457,272 +2457,272 @@ MonoBehaviour:
     count: 6800
   - displayName: 'Arcane Ring '
     description: 'Restores 75 mana to all nearby allies. '
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 919c1eda91e50f54cbd2f0835e275243, type: 3}
     type: 2
     count: 0
   - displayName: 'Broom Handle '
     description: +4 Armor , +8 Attack Damage , +50 Melee Attack Range
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 65418816b7a5c8b4baf3c87a16985867, type: 3}
     type: 2
     count: 0
   - displayName: 'Duelist Gloves '
     description: 'Grants 20 attack speed as long as there are enemy heroes within
       1200 units. '
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 56f63df8f7ebd154ab33e333de398075, type: 3}
     type: 2
     count: 0
   - displayName: 'Faded Broach '
     description: +150 Mana , +15 Move Speed
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: e660f429eda56bb4d89e92428f9c73ad, type: 3}
     type: 2
     count: 0
   - displayName: 'Fairy''s Trinket '
     description: +75 Health , +5% Mana Loss Reduction , +5% Spell Damage Amp
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: fc8e2e9ae026843488feb0b23d1eec2a, type: 3}
     type: 2
     count: 0
   - displayName: 'Lance of Pursuit '
     description: +200 Mana , Attacking from behind slows enemies by 16% (8% if Ranged)
       and deals +15 more Damage. Slows lasts for 2 second.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 1b8b23427ed73854ba677828975c7fec, type: 3}
     type: 2
     count: 0
   - displayName: 'Occult Bracelet '
     description: Each time the wearer is attacked they gain a stack of 0.5 mana regen,
       up to 5 stacks. Stacks last for 10 seconds.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: e3394291653ad8444990de87ad30abfc, type: 3}
     type: 2
     count: 0
   - displayName: 'Pig Pole '
     description: 'Turns your hero into a critter for 4 seconds and gives them +10%
       Movement Speed. '
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 5aa9455e8d93bec44b25c63b067601a6, type: 3}
     type: 2
     count: 0
   - displayName: 'Seeds of Serenity '
     description: Target the ground with a 400 radius. Provides +10 health regeneration
       to all allied units while they're in the area of effect.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 371225d2f87cba243bf50500480602bd, type: 3}
     type: 2
     count: 0
   - displayName: 'Spark of Courage '
     description: Provides 18 damage when the owner is above 50% health, and 7 armor
       when they are below that threshold.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 5664d28d4c3ab4f4c8b9d6bade522951, type: 3}
     type: 2
     count: 0
   - displayName: 'Trusty Shovel '
     description: Channel for 1 second. Can find a Bounty Rune, a Flask, an Enchanted
       Mango, or a friendly Kobold.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 9ba09760201cafa4aac980f711c82863, type: 3}
     type: 2
     count: 0
   - displayName: 'Tumbler''s Toy '
     description: +200 Mana , Propels your hero forward 300 units. Tumbler's Toy gets
       disabled for 3 seconds if its owner receives damage from a player source.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: a8a4bbdd4f22d0a449fcb6c8c6b90ecc, type: 3}
     type: 2
     count: 0
   - displayName: 'Bullwhip '
     description: Grants 18% movement speed when cast on allies, and slows by 18%
       when cast on enemies. Lasts 4 seconds.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 89943f63db42d6f44bd317535ac4a396, type: 3}
     type: 2
     count: 0
   - displayName: 'Dragon Scale '
     description: Causes attacks to burn the enemy, dealing 22 damage per second for
       3 seconds. Affects buildings.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: f8cb6b6810f1ef04a891a64108dc8b77, type: 3}
     type: 2
     count: 0
   - displayName: 'Eye of the Vizier '
     description: -15% Mana , +1.25 Mana Regeneration , +125 Cast Range
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 0e70efc7ad0314b4188fd544a1816eed, type: 3}
     type: 2
     count: 0
   - displayName: 'Gossamer Cape '
     description: 'Automatically dodge the next attack from a hero. '
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 091d8520a30a6e54c93aea6d1d7c2963, type: 3}
     type: 2
     count: 0
   - displayName: 'Grove Bow '
     description: 'Reduces magic resistance of the attacked enemy by 15%. '
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 406e2e361491672499db98e551937172, type: 3}
     type: 2
     count: 0
   - displayName: 'Orb of Destruction '
     description: Attacks reduce the target's armor and movement speed. Slow amount
       varies based on whether the wearer is melee or ranged.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 84495f223615cee45a33726fb0e44f6e, type: 3}
     type: 2
     count: 0
   - displayName: 'Philosopher''s Stone '
     description: +200 Mana , -30 Attack Damage , +75 Gold Gold/min
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 5aa442d4fca0c564ea8ed365c5b8a674, type: 3}
     type: 2
     count: 0
   - displayName: 'Ring of Aquila '
     description: 66 health and 0.3 health regeneration. 36 mana, 0.15 mana regeneration
       and 0.3% flat base magic resistance.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: a0b883b7cb8f8da4e87d92ceff3eaf9d, type: 3}
     type: 2
     count: 0
   - displayName: 'Specialist''s Array '
     description: 154 health and 0.7 health regeneration. 84 mana, 0.35 mana regeneration
       and 0.7% flat base magic resistance. 7 attack speed and 1.17 main armor.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 083f7f263c5bd7c4b8160d51c7015c2a, type: 3}
     type: 2
     count: 0
   - displayName: 'Ceremonial Robe '
     description: '+300 Mana , Lowers enemy Status Resistance by 10% and Magic Resistance
       by 10%. '
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 2fadf6107fd81744da40903452d3d748, type: 3}
     type: 2
     count: 0
   - displayName: 'Cloak of Flames '
     description: Burns enemy units for 45 damage per second. Illusions deal 30 damage
       per second.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 4db85171a124f51408081df6537e41b6, type: 3}
     type: 2
     count: 0
   - displayName: 'Dandelion Amulet '
     description: 'Block 300 magic damage from damage instances over 75 damage '
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 0f040795d324a8747a4ec05407db4dfd, type: 3}
     type: 2
     count: 0
   - displayName: 'Defiant Shell '
     description: 'When attacked, the hero counter-attacks a target within their attack
       range. Returned Damage: 100%'
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 8e26d7c5c2a9ac9498e66918da42c4ef, type: 3}
     type: 2
     count: 0
   - displayName: 'Elven Tunic '
     description: +16% Evasion , +7% Move Speed , +26 Attack Speed
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: daaad7512dee63643b58458bef1279b7, type: 3}
     type: 2
     count: 0
   - displayName: 'Enchanted Quiver '
     description: Empowers your next attack with 250 bonus magical damage and True
       Strike. Ranged Attackers have , +350 bonus range for the attack.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: b4ca6f4aad6ea1544a1dd4a32894941f, type: 3}
     type: 2
     count: 0
   - displayName: 'Psychic Headband '
     description: 'Grants 15% intelligence bonus. Intelligence Bonus: 15%'
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 40f6bde2f44f2314aa925009cc799ff5, type: 3}
     type: 2
     count: 0
   - displayName: 'Quickening Charm '
     description: 'Reduces the cooldown time of all spells and items by 10% Cooldown
       Reduction: 10%'
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 72f4a316b008ec541ac13acf639ec735, type: 3}
     type: 2
     count: 0
   - displayName: 'Titan Sliver '
     description: +16% Magic Resistance , +10% Status Resistance , +20% Attack Damage
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: f9842f4c2f0dfd24a99a467d7e96dc1b, type: 3}
     type: 2
     count: 0
   - displayName: 'Vindicator''s Axe '
     description: +20% Slow Resistance , +35 Attack Speed
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 794a79b7a0ec46f4e8c424341e9cffc0, type: 3}
     type: 2
     count: 0
   - displayName: 'Ascetic''s Cap '
     description: +250 Health , +20 Health Regeneration
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 91ec877d3055a7444a7c679d03a2fe63, type: 3}
     type: 2
     count: 0
   - displayName: 'Havoc Hammer '
     description: +16 Strength , +16 Attack Damage
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 098a510d9f6ce5845b8d23eac6c29952, type: 3}
     type: 2
     count: 0
   - displayName: 'Martyr''s Plate '
     description: +5 Health Regeneration , +25% Magic Resistance
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 0015413a2aaa14742ae915c35c685121, type: 3}
     type: 2
     count: 0
   - displayName: 'Mind Breaker '
     description: +45 Attack Damage , +30 Attack Speed
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 9e779baa2420d734a8006ccc5ec73428, type: 3}
     type: 2
     count: 0
   - displayName: 'Ninja Gear '
     description: +20 Agility , +20 Move Speed
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 94179ba7334e1a44fbdbd67cecb0e8de, type: 3}
     type: 2
     count: 0
   - displayName: 'Penta-Edged Sword '
     description: +45 Attack Damage , +100 Melee Attack Range
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: c9752e20deaee5042ac0dc49506ee16a, type: 3}
     type: 2
     count: 0
   - displayName: 'Spell Prism '
     description: +5 Strength , +5 Agility , +5 Intelligence , +2 Mana Regeneration
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 70c82c9106e5ac6498205ed83ec27d92, type: 3}
     type: 2
     count: 0
   - displayName: Stormcrafter
     description: +4 Mana Regeneration , +35 Move Speed
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: e4bb0b82a0467984d9082f241bf7c3a9, type: 3}
     type: 2
     count: 0
   - displayName: 'Timeless Relic '
     description: +20% Debuff Duration Amp , +15% Spell Damage Amp
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 0856636398d3c49408312900df88bf4c, type: 3}
     type: 2
     count: 0
   - displayName: 'Trickster Cloak '
     description: +17% Evasion , +17% Magic Resistance
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 44973bc344d6834439fdae2706c98539, type: 3}
     type: 2
     count: 0
   - displayName: 'Arcanist''s Armor '
     description: +5 Armor , +20% Magic Resistance
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 1f479e4240375e146910279a4592033d, type: 3}
     type: 2
     count: 0
   - displayName: 'Book of Shadows '
     description: +13 Strength , +13 Agility , +13 Intelligence , +400 Night Vision
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 2221a04637fd37340a745a595da14bad, type: 3}
     type: 2
     count: 0
   - displayName: 'Book of the Dead '
     description: +25 Strength , +25 Intelligence
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: fc76e10cf4ce3d5499c2c0c42ea5b90f, type: 3}
     type: 2
     count: 0
   - displayName: 'Ex Machina '
     description: +20 Armor , Reset the cooldowns on all items (except Refresher Orb).
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: eaeb8a8cb52a38e428621b4c0bb494c5, type: 3}
     type: 2
     count: 0
   - displayName: 'Fallen Sky '
     description: +25 Strength , +15 Intelligence , +15 Health Regeneration , +10
       Mana Regeneration
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 37513499c4e2c344cb07fd95c0eab110, type: 3}
     type: 2
     count: 0
   - displayName: 'Force Boots '
     description: +30 Health Regeneration , +115 Move Speed
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: f375bc64eaace8040a227bae68d74a95, type: 3}
     type: 2
     count: 0
   - displayName: 'Giant''s Ring '
     description: +35 Strength , +50 Move Speed
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: a90f42c43c78bab45a9a88bafa3b8302, type: 3}
     type: 2
     count: 0
   - displayName: 'Pirate Hat '
     description: +15 Move Speed , +150 Attack Speed
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: c48114b629d10bd45ade17a4487db9b7, type: 3}
     type: 2
     count: 0
   - displayName: 'Stygian Desolator '
     description: +60 Attack Damage , Your attacks reduce the target's armor by 10
       for 7 seconds.
-    icon: {fileID: 0}
+    icon: {fileID: 21300000, guid: 516313bbc0914b1418af8f776d2d96da, type: 3}
     type: 2
     count: 0
 --- !u!1 &1584293661
