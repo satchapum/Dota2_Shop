@@ -8,19 +8,21 @@ using TMPro;
 
 namespace Dota2.ShopSystem
 {
-    public class UIItem : MonoBehaviour, IPointerClickHandler, IClickable, IPointerExitHandler, IPointerEnterHandler
+    public class UIItem : MonoBehaviour,IPointerClickHandler, IClickable, IPointerExitHandler, IPointerEnterHandler
     {
         [SerializeField] Image itemImage;
         [SerializeField] TMP_Text countText;
         [SerializeField] UIShop uiShop;
         [SerializeField] ItemData itemData;
+        
 
         [SerializeField] Image iconItem;
         [SerializeField] TMP_Text nameText;
         [SerializeField] TMP_Text description;
         [SerializeField] TMP_Text price;
+        [SerializeField] MoneySystem moneySystem;
 
-        UIItem_Data itemDescription;
+        public UIItem_Data itemDescription;
         public void SetData(UIItem_Data data)
         {
             itemImage.sprite = data.itemData.icon;
@@ -49,8 +51,14 @@ namespace Dota2.ShopSystem
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            throw new System.NotImplementedException();
+            if (eventData.pointerEnter.transform.name == itemDescription.itemData.displayName)
+            {
+                Debug.Log("Comfirm Buy");
+                moneySystem.moneyCount -= itemDescription.itemData.count;
+            }
         }
+
+        
     }
     public class UIItem_Data
     {

@@ -7,29 +7,19 @@ using UnityEngine.EventSystems;
 namespace Dota2.ShopSystem
 {
 
-    public class MoneySystem : MonoBehaviour ,IClickable
+    public class MoneySystem : MonoBehaviour 
     {
 
         [SerializeField] TMP_Text moneyText;
-        [SerializeField] int moneyCount = 0;
-
-        void Start () 
-        {
-            MoneyUI();
-        }
-        public void OnPointerClick(PointerEventData eventData)
-        {
-            throw new System.NotImplementedException(); //แก้ตรงนี้อันนี้เวลากดแล้วจะทำให้เกิดอะไร
-        }
-        void MoneyCounting()
-        {
-            //ดึงค่าเงินมาจากตัวShopเพื่อเก็บเงิน
-        }
-
-        void MoneyUI()
+        public int moneyCount = 0;
+            
+                
+        void Update()
         {
             moneyText.text = "Gold : " + moneyCount; //uiเงิน
         }
+
+        
     }
 
 }
