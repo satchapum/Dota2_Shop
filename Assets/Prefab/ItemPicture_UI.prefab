@@ -93,6 +93,17 @@ MonoBehaviour:
   itemImage: {fileID: 2350249394414968753}
   countText: {fileID: 3199382030332006158}
   uiShop: {fileID: 0}
+  itemData:
+    displayName: 
+    description: 
+    icon: {fileID: 0}
+    type: 0
+    count: 0
+  iconItem: {fileID: 0}
+  nameText: {fileID: 0}
+  description: {fileID: 0}
+  price: {fileID: 0}
+  moneySystem: {fileID: 0}
 --- !u!1 &7018487623332302989
 GameObject:
   m_ObjectHideFlags: 0
