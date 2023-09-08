@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 259283139}
   - component: {fileID: 259283138}
   - component: {fileID: 259283137}
+  - component: {fileID: 259283140}
   m_Layer: 5
   m_Name: BasicButton
   m_TagString: Untagged
@@ -414,11 +415,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1561715983}
         m_TargetAssemblyTypeName: Dota2.ShopSystem.ItemListPresenter, Assembly-CSharp
-        m_MethodName: BasicCategoryButton
-        m_Mode: 1
+        m_MethodName: CategoryButton
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 259283135}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -462,6 +463,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 259283135}
   m_CullTransparentMesh: 1
+--- !u!114 &259283140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259283135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa3d8915453895438d69067e581485b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  categoryIndexOfBasicItem: 0
+  naturalItemGameObject: {fileID: 259283135}
+  itemListPresenter: {fileID: 1561715983}
 --- !u!1 &262650179
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,16 +2156,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1e03581a85bd974cb2b797005893f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentCategoryIndex: 0
   pageSizeInput: {fileID: 149773829}
   currentPagesize: 10
   ui: {fileID: 1669871368}
   shop: {fileID: 1561715985}
   currentShopPage: 0
   maxShopPage: 0
-  categoryInfoList:
-  - name: Basic
-  - name: Upgrade
-  - name: Juggle
+  categoryList:
+  - {fileID: 259283140}
+  - {fileID: 1804493216}
+  - {fileID: 1832351890}
 --- !u!4 &1561715984
 Transform:
   m_ObjectHideFlags: 0
@@ -3637,6 +3654,7 @@ GameObject:
   - component: {fileID: 1804493215}
   - component: {fileID: 1804493214}
   - component: {fileID: 1804493213}
+  - component: {fileID: 1804493216}
   m_Layer: 5
   m_Name: UpgradeButton
   m_TagString: Untagged
@@ -3711,11 +3729,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1561715983}
         m_TargetAssemblyTypeName: Dota2.ShopSystem.ItemListPresenter, Assembly-CSharp
-        m_MethodName: UpgradeCategoryButton
-        m_Mode: 1
+        m_MethodName: CategoryButton
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1804493211}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3759,6 +3777,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1804493211}
   m_CullTransparentMesh: 1
+--- !u!114 &1804493216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1804493211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74a143cc7c7b1ad45ab06ca9a92a99d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  categoryIndexOfUpgradeItem: 1
+  naturalItemGameObject: {fileID: 1804493211}
+  itemListPresenter: {fileID: 1561715983}
 --- !u!1 &1832351885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3771,6 +3804,7 @@ GameObject:
   - component: {fileID: 1832351889}
   - component: {fileID: 1832351888}
   - component: {fileID: 1832351887}
+  - component: {fileID: 1832351890}
   m_Layer: 5
   m_Name: NuturalButton
   m_TagString: Untagged
@@ -3845,11 +3879,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1561715983}
         m_TargetAssemblyTypeName: Dota2.ShopSystem.ItemListPresenter, Assembly-CSharp
-        m_MethodName: NaturalItemCategoryButton
-        m_Mode: 1
+        m_MethodName: CategoryButton
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1832351885}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3893,6 +3927,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832351885}
   m_CullTransparentMesh: 1
+--- !u!114 &1832351890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832351885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b0b9891ff81874448a7a972ea3ea292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  categoryIndexOfNaturalItem: 2
+  naturalItemGameObject: {fileID: 1832351885}
+  itemListPresenter: {fileID: 1561715983}
 --- !u!1 &1855295848
 GameObject:
   m_ObjectHideFlags: 0
