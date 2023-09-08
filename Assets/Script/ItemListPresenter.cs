@@ -49,26 +49,6 @@ namespace Dota2.ShopSystem
                 categoryList[numberOfCategory].SetCategoryIndex(nameCategoryButton);
             }
         }
-        //public void BasicCategoryButton()
-        //{
-        //    currentShopPage = 0;
-        //    currentCategoryIndex = 0;
-        //    RefreshUI();
-        //}
-
-        //public void UpgradeCategoryButton()
-        //{
-        //    currentShopPage = 0;
-        //    currentCategoryIndex = 1;
-        //    RefreshUI();
-        //}
-
-        //public void NaturalItemCategoryButton()
-        //{
-        //    currentShopPage = 0;
-        //    currentCategoryIndex = 2;
-        //    RefreshUI();
-        //}
 
         public void PrevItemPageButton()
         {

@@ -1,67 +1,38 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Progress;
-using UnityEngine.UI;
-using static Dota2.ShopSystem.Shop;
-using UnityEngine.EventSystems;
-using TMPro;
 
 namespace Dota2.ShopSystem
 {
     public class UIShop : MonoBehaviour
     {
-        [Header("Item List")]
-        [SerializeField] UIItem itemUIPrefab;
-        [SerializeField] List<UIItem> itemUIList = new List<UIItem>();
+        [SerializeField] public UIShopAbs[] shopType;
+        [SerializeField] ItemListPresenter ItemListPresenter;
+        public int shopTypeIndex = 0;
 
-        [SerializeField] GameObject description;
-
-        void Start()
+        public void OnButtonShopTypeClick(int inputShopTypeIndex)
         {
-            itemUIPrefab.gameObject.SetActive(false);
+            ClearAllItemUIs();
+            shopTypeIndex = inputShopTypeIndex;
+            ItemListPresenter.RefreshUI();
         }
+
         public void ClearAllItemUIs()
         {
-            foreach (UIItem uiItem in itemUIList)
-                Destroy(uiItem.gameObject);
-
-            itemUIList.Clear();
+            shopType[shopTypeIndex].ClearAllItemUIs();
         }
 
         public void SetItemList(UIItem_Data[] uiDatas)
         {
-            ClearAllItemUIs();
-            foreach (var uiItemData in uiDatas)
-            {
-                var newItemUI = Instantiate(itemUIPrefab, itemUIPrefab.transform.parent, false);
-
-                newItemUI.gameObject.SetActive(true);
-                itemUIList.Add(newItemUI);
-                newItemUI.SetData(uiItemData);
-
-                newItemUI.name = uiItemData.itemData.displayName;
-            }
+            shopType[shopTypeIndex].SetItemList(uiDatas);
         }
 
         public void ShowItemDescription(Vector3 position)
         {
-            description.SetActive(true);
-            description.transform.position = position;
+            shopType[shopTypeIndex].ShowItemDescription(position);
         }
 
         public void HideItemDescription()
         {
-            description.SetActive(false);
+            shopType[shopTypeIndex].HideItemDescription();
         }
     }
-
-    [Serializable]
-    public class CategoryInfo
-    {
-        public string name;
-    }
-
 }
-
