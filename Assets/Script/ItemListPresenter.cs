@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Dota2.ShopSystem
 {
 
     public class ItemListPresenter : MonoBehaviour
     {
-        int currentCategoryIndex;
+        [SerializeField] public int currentCategoryIndex;
         
         int maxShownItemCount;
         int maxCategoryCount = 2;
@@ -21,7 +22,7 @@ namespace Dota2.ShopSystem
 
         [SerializeField] float currentShopPage = 0.0f;
         [SerializeField] float maxShopPage = 0.0f;
-        [SerializeField] List<CategoryInfo> categoryInfoList = new List<CategoryInfo>();
+        [SerializeField] List<Category> categoryList;
 
         void Start()
         {
@@ -39,27 +40,35 @@ namespace Dota2.ShopSystem
             }
             
         }
-
-        public void BasicCategoryButton()
+        public void CategoryButton(GameObject nameCategoryButton)
         {
             currentShopPage = 0;
-            currentCategoryIndex = 0;
-            RefreshUI();
+            int firstNumberOfCategory = 0;
+            for (int numberOfCategory = firstNumberOfCategory; numberOfCategory < categoryList.Count; numberOfCategory++)
+            {
+                categoryList[numberOfCategory].SetCategoryIndex(nameCategoryButton);
+            }
         }
+        //public void BasicCategoryButton()
+        //{
+        //    currentShopPage = 0;
+        //    currentCategoryIndex = 0;
+        //    RefreshUI();
+        //}
 
-        public void UpgradeCategoryButton()
-        {
-            currentShopPage = 0;
-            currentCategoryIndex = 1;
-            RefreshUI();
-        }
+        //public void UpgradeCategoryButton()
+        //{
+        //    currentShopPage = 0;
+        //    currentCategoryIndex = 1;
+        //    RefreshUI();
+        //}
 
-        public void NaturalItemCategoryButton()
-        {
-            currentShopPage = 0;
-            currentCategoryIndex = 2;
-            RefreshUI();
-        }
+        //public void NaturalItemCategoryButton()
+        //{
+        //    currentShopPage = 0;
+        //    currentCategoryIndex = 2;
+        //    RefreshUI();
+        //}
 
         public void PrevItemPageButton()
         {
@@ -89,9 +98,6 @@ namespace Dota2.ShopSystem
         [ContextMenu(nameof(RefreshUI))]
         public void RefreshUI()
         {
-
-            var currentCategoryInfo = categoryInfoList[currentCategoryIndex];
-
             var currentCategory = (ItemType)currentCategoryIndex;
 
             var itemsToDisplay = shop.GetItemsByType(currentCategory);
