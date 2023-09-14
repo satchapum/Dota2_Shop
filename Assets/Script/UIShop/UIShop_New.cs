@@ -3,6 +3,7 @@ using UnityEngine;
 using Dota2.ShopSystem;
 using System.Collections;
 using DG.Tweening;
+using TMPro;
 
 public class UIShop_New : UIShopAbs
 {
@@ -10,6 +11,7 @@ public class UIShop_New : UIShopAbs
     [SerializeField] List<UIItem> itemUIList = new List<UIItem>();
     [SerializeField] GameObject description;
     [SerializeField] CanvasGroup newShopUI;
+
 
     void Start()
     {
@@ -56,8 +58,6 @@ public class UIShop_New : UIShopAbs
             yield return new WaitForSeconds(0.27f);
             
             newItemUI.name = uiItemData.itemData.displayName;
-
-            
         }
     }
     void FadeInFinish()

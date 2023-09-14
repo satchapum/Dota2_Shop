@@ -12,14 +12,13 @@ namespace Dota2.ShopSystem
     {
         [SerializeField] Image itemImage;
         [SerializeField] TMP_Text countText;
-        [SerializeField] UIShop uiShop;
-        [SerializeField] ItemData itemData;
-        
-
         [SerializeField] Image iconItem;
         [SerializeField] TMP_Text nameText;
         [SerializeField] TMP_Text description;
         [SerializeField] TMP_Text price;
+        [SerializeField] UIShop uiShop;
+        [SerializeField] ItemData itemData;
+        
         [SerializeField] MoneySystem moneySystem;
 
         public UIItem_Data itemDescription;
@@ -27,7 +26,12 @@ namespace Dota2.ShopSystem
         {
             itemImage.sprite = data.itemData.icon;
             countText.text = "" + data.itemData.count;
+            nameText.text = data.itemData.displayName;
+            description.text = data.itemData.description;
+            Debug.Log(nameText.text);
+
             itemDescription = data;
+            
         }
 
         public void OnPointerEnter(PointerEventData eventData)

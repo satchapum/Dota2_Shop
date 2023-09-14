@@ -2698,7 +2698,7 @@ PrefabInstance:
     - target: {fileID: -128843650175834678, guid: 5aa2d7cc1d774b34b9debeafcf1f1c4c, type: 3}
       propertyPath: price
       value: 
-      objectReference: {fileID: 262040101}
+      objectReference: {fileID: 3274836226922619125}
     - target: {fileID: -128843650175834678, guid: 5aa2d7cc1d774b34b9debeafcf1f1c4c, type: 3}
       propertyPath: uiShop
       value: 
@@ -2711,6 +2711,10 @@ PrefabInstance:
       propertyPath: nameText
       value: 
       objectReference: {fileID: 1285499913}
+    - target: {fileID: -128843650175834678, guid: 5aa2d7cc1d774b34b9debeafcf1f1c4c, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 262040101}
     - target: {fileID: -128843650175834678, guid: 5aa2d7cc1d774b34b9debeafcf1f1c4c, type: 3}
       propertyPath: itemImage
       value: 
