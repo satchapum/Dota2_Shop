@@ -1,6 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Dota2.ShopSystem;
+using System.Collections;
+using DG.Tweening;
+
 public class UIShop_New : UIShopAbs
 {
     [SerializeField] UIItem itemUIPrefab;
@@ -23,6 +26,11 @@ public class UIShop_New : UIShopAbs
     public override void SetItemList(UIItem_Data[] uiDatas)
     {
         ClearAllItemUIs();
+        StartCoroutine(ShowItemsWithDelay(uiDatas));
+    }
+
+    private IEnumerator ShowItemsWithDelay(UIItem_Data[] uiDatas)
+    {
         foreach (var uiItemData in uiDatas)
         {
             var newItemUI = Instantiate(itemUIPrefab, itemUIPrefab.transform.parent, false);
@@ -31,7 +39,11 @@ public class UIShop_New : UIShopAbs
             itemUIList.Add(newItemUI);
             newItemUI.SetData(uiItemData);
 
+            yield return new WaitForSeconds(0.25f);
+
             newItemUI.name = uiItemData.itemData.displayName;
+
+            
         }
     }
 
