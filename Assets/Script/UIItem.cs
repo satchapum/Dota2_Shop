@@ -26,8 +26,12 @@ namespace Dota2.ShopSystem
         {
             itemImage.sprite = data.itemData.icon;
             countText.text = "" + data.itemData.count;
-            nameText.text = data.itemData.displayName;
-            description.text = data.itemData.description;
+            if(uiShop.shopTypeIndex == 1)
+            {
+                nameText.text = data.itemData.displayName;
+                description.text = data.itemData.description;
+            }
+            
             Debug.Log(nameText.text);
 
             itemDescription = data;
