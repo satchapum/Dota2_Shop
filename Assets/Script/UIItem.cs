@@ -32,14 +32,15 @@ namespace Dota2.ShopSystem
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            if (eventData.pointerEnter.transform.name == itemDescription.itemData.displayName)
+            if (eventData.pointerEnter.transform.name == itemDescription.itemData.displayName && uiShop.shopTypeIndex == 0)
             {
                 iconItem.sprite = itemDescription.itemData.icon;
                 nameText.text = itemDescription.itemData.displayName;
                 description.text = itemDescription.itemData.description;
                 price.text = itemDescription.itemData.count.ToString();
+                uiShop.ShowItemDescription(transform.position);
             }
-            uiShop.ShowItemDescription(transform.position);
+            
             Debug.Log("Enter");
         }
 

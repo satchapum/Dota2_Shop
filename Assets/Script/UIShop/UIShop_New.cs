@@ -9,6 +9,7 @@ public class UIShop_New : UIShopAbs
     [SerializeField] UIItem itemUIPrefab;
     [SerializeField] List<UIItem> itemUIList = new List<UIItem>();
     [SerializeField] GameObject description;
+    [SerializeField] CanvasGroup newShopUI;
 
     void Start()
     {
@@ -27,24 +28,41 @@ public class UIShop_New : UIShopAbs
     {
         ClearAllItemUIs();
         StartCoroutine(ShowItemsWithDelay(uiDatas));
+
     }
 
+   
     private IEnumerator ShowItemsWithDelay(UIItem_Data[] uiDatas)
     {
+
         foreach (var uiItemData in uiDatas)
         {
             var newItemUI = Instantiate(itemUIPrefab, itemUIPrefab.transform.parent, false);
+            newItemUI.transform.localScale = Vector3.zero;
+
+            newItemUI.transform.DOScale(1f, 1f);
 
             newItemUI.gameObject.SetActive(true);
+            newShopUI.alpha = 0;
+            newShopUI.blocksRaycasts = false;
+            newShopUI
+                .DOFade(1f, 3f)
+                .OnComplete(FadeInFinish)
+                .SetUpdate(true);
+
             itemUIList.Add(newItemUI);
             newItemUI.SetData(uiItemData);
 
-            yield return new WaitForSeconds(0.25f);
-
+            yield return new WaitForSeconds(0.27f);
+            
             newItemUI.name = uiItemData.itemData.displayName;
 
             
         }
+    }
+    void FadeInFinish()
+    {
+        newShopUI.blocksRaycasts = true;
     }
 
     public override void ShowItemDescription(Vector3 position)
