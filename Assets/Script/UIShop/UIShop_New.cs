@@ -54,6 +54,7 @@ public class UIShop_New : UIShopAbs
 
             itemUIList.Add(newItemUI);
             newItemUI.SetData(uiItemData);
+            newItemUI.SetDataSprite(uiItemData);
 
             yield return new WaitForSeconds(0.27f);
             

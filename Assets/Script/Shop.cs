@@ -1,28 +1,31 @@
+using Newtonsoft.Json;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+using UnityEngine.Networking;
 
 namespace Dota2.ShopSystem
 {
     public class Shop : MonoBehaviour
     {
-        public ItemData[] Items => itemList.ToArray();
-        [SerializeField] List<ItemData> itemList = new List<ItemData>();
-            public ItemData[] GetItemsByType(ItemType targetType)
-            {
-                //Create a list that will hold all the items that matched the targetType
-                var resultList = new List<ItemData>();
-                foreach (var itemData in itemList)
-                {
-                    if (itemData.type == targetType)
-                        resultList.Add(itemData);
-                }
+        public ItemSpriteData[] ItemSprites => itemSprites.ToArray();
+        [SerializeField] public List<ItemSpriteData> itemSprites = new List<ItemSpriteData>();
 
-                //Return the result as Array not List. Because we don't want caller to modify the result afterward.
-                return resultList.ToArray();
+        public ItemData[] Items => itemList.ToArray();
+        [SerializeField] public List<ItemData> itemList = new List<ItemData>();
+        public ItemData[] GetItemsByType(ItemType targetType)
+        {
+            var resultList = new List<ItemData>();
+            foreach (var itemData in itemList)
+            {
+                if (itemData.type == targetType)
+                    resultList.Add(itemData);
             }
 
+            return resultList.ToArray();
+        }
 
     }
     [Serializable]
@@ -30,9 +33,14 @@ namespace Dota2.ShopSystem
     {
         public string displayName;
         public string description;
-        public Sprite icon;
         public ItemType type;
         public int count;
+    }
+
+    [Serializable]
+    public class ItemSpriteData
+    {
+        public Sprite icon;
     }
     public enum ItemType
     {

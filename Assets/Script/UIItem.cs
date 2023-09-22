@@ -17,14 +17,16 @@ namespace Dota2.ShopSystem
         [SerializeField] TMP_Text description;
         [SerializeField] TMP_Text price;
         [SerializeField] UIShop uiShop;
+
         [SerializeField] ItemData itemData;
+        [SerializeField] ItemSpriteData itemSpriteData;
         
         [SerializeField] MoneySystem moneySystem;
 
         public UIItem_Data itemDescription;
+
         public void SetData(UIItem_Data data)
         {
-            itemImage.sprite = data.itemData.icon;
             countText.text = "" + data.itemData.count;
             if(uiShop.shopTypeIndex == 1)
             {
@@ -33,16 +35,21 @@ namespace Dota2.ShopSystem
             }
             
             Debug.Log(nameText.text);
-
             itemDescription = data;
             
+        }
+        
+        public void SetDataSprite(UIItem_Data data)
+        {
+            itemImage.sprite = data.spriteData.icon;
+
         }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
             if (eventData.pointerEnter.transform.name == itemDescription.itemData.displayName && uiShop.shopTypeIndex == 0)
             {
-                iconItem.sprite = itemDescription.itemData.icon;
+                iconItem.sprite = itemDescription.spriteData.icon;
                 nameText.text = itemDescription.itemData.displayName;
                 description.text = itemDescription.itemData.description;
                 price.text = itemDescription.itemData.count.ToString();
@@ -72,10 +79,12 @@ namespace Dota2.ShopSystem
     public class UIItem_Data
     {
         public ItemData itemData;
+        public ItemSpriteData spriteData;
 
-        public UIItem_Data(ItemData itemData)
+        public UIItem_Data(ItemData itemData, ItemSpriteData spriteData)
         {
             this.itemData = itemData;
+            this.spriteData = spriteData;
         }
     }
 

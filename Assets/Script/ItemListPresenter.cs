@@ -3,7 +3,8 @@ using UnityEngine;
 using Newtonsoft.Json;
 using UnityEngine;
 using UnityEngine.Networking;
-
+using System.IO;
+using System.Collections;
 
 namespace Dota2.ShopSystem
 {
@@ -15,6 +16,10 @@ namespace Dota2.ShopSystem
         int maxShownItemCount;
         int maxCategoryCount = 2;
 
+        [Header("Save")]
+        [SerializeField] string savePath;
+        [SerializeField] string onlineLoadPath;
+
         [Header("PageSize")]
         [SerializeField] CurrentPageSize pageSizeInput;
         public float currentPagesize;
@@ -24,6 +29,11 @@ namespace Dota2.ShopSystem
         [SerializeField] float currentShopPage = 0.0f;
         [SerializeField] float maxShopPage = 0.0f;
         [SerializeField] List<Category> categoryList;
+
+        private void Awake()
+        {
+            LoadScoreFromGoogleDrive();
+        }
 
         void Start()
         {
@@ -40,11 +50,6 @@ namespace Dota2.ShopSystem
                 RefreshUI();
             }
             
-        }
-        void TestJsonConvert()
-        {
-            var scoreJson = JsonConvert.SerializeObject(playerScoreList);
-            Debug.Log(scoreJson);
         }
         public void CategoryButton(GameObject nameCategoryButton)
         {
@@ -81,6 +86,57 @@ namespace Dota2.ShopSystem
             }
         }
 
+        [ContextMenu(nameof(SaveScoreData))]
+        void SaveScoreData()
+        {
+            if (string.IsNullOrEmpty(savePath))
+            {
+                Debug.LogError("No save path ja");
+                return;
+            }
+
+            var scoreJson = JsonConvert.SerializeObject(shop.itemList, new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore
+            }); ;
+            var dataPath = Application.dataPath;
+            var targetFilePath = Path.Combine(dataPath, savePath);
+
+            var directoryPath = Path.GetDirectoryName(targetFilePath);
+            if (Directory.Exists(directoryPath) == false)
+                Directory.CreateDirectory(directoryPath);
+
+            File.WriteAllText(targetFilePath, scoreJson);
+        }
+        IEnumerator LoadScoreRoutine(string url)
+        {
+            var webRequest = UnityWebRequest.Get(url);
+
+            //Get download progress
+            var progress = webRequest.downloadProgress;
+            Debug.Log(progress);
+
+            yield return webRequest.SendWebRequest();
+
+            if (webRequest.result != UnityWebRequest.Result.Success)
+            {
+                Debug.LogError(webRequest.error);
+            }
+            else
+            {
+                var downloadedText = webRequest.downloadHandler.text;
+                Debug.Log("Receive Data : " + downloadedText);
+                shop.itemList = JsonConvert.DeserializeObject<List<ItemData>>(downloadedText);
+            }
+        }
+
+        [ContextMenu(nameof(LoadScoreFromGoogleDrive))]
+        void LoadScoreFromGoogleDrive()
+        {
+            StartCoroutine(LoadScoreRoutine(onlineLoadPath));
+            RefreshUI();
+        }
+
         [ContextMenu(nameof(RefreshUI))]
         public void RefreshUI()
         {
@@ -104,7 +160,7 @@ namespace Dota2.ShopSystem
             {
                 if (i >= startIndexToDisplay && i < endIndexToDisplay)
                 {
-                    uiDataList.Add(new UIItem_Data(item));
+                    uiDataList.Add(new UIItem_Data(item, null));
                 }
 
                 i++;
