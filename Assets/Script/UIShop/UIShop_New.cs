@@ -54,11 +54,11 @@ public class UIShop_New : UIShopAbs
 
             itemUIList.Add(newItemUI);
             newItemUI.SetData(uiItemData);
-            newItemUI.SetDataSprite(uiItemData);
+            newItemUI.name = uiItemData.itemData.displayName;
 
             yield return new WaitForSeconds(0.27f);
+
             
-            newItemUI.name = uiItemData.itemData.displayName;
         }
     }
     void FadeInFinish()

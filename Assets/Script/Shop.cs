@@ -18,12 +18,23 @@ namespace Dota2.ShopSystem
         public ItemData[] GetItemsByType(ItemType targetType)
         {
             var resultList = new List<ItemData>();
+
             foreach (var itemData in itemList)
             {
                 if (itemData.type == targetType)
+                {
+                    int i = 0;
+                    foreach (var itemSprite in ItemSprites)
+                    {
+                        if (itemData.displayName == itemSprite.displayName)
+                        {
+                            itemData.image = itemSprite.icon;
+                        }
+                        i++;
+                    }
                     resultList.Add(itemData);
+                }
             }
-
             return resultList.ToArray();
         }
 
@@ -35,11 +46,13 @@ namespace Dota2.ShopSystem
         public string description;
         public ItemType type;
         public int count;
+        public Sprite image;
     }
 
     [Serializable]
     public class ItemSpriteData
     {
+        public string displayName;
         public Sprite icon;
     }
     public enum ItemType

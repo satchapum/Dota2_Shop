@@ -33,8 +33,6 @@ public class UIShop_Old : UIShopAbs
             newItemUI.SetData(uiItemData);
 
             newItemUI.name = uiItemData.itemData.displayName;
-            newItemUI.SetData(uiItemData);
-            newItemUI.SetDataSprite(uiItemData);
 
         }
     }

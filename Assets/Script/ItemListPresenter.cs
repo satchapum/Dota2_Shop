@@ -35,12 +35,6 @@ namespace Dota2.ShopSystem
             LoadScoreFromGoogleDrive();
         }
 
-        void Start()
-        {
-            maxShopPage = Mathf.Ceil((shop.GetItemsByType((ItemType)currentCategoryIndex).Length / currentPagesize)) - 1.0f;
-            RefreshUI();
-        }
-
         void Update()
         {
             if (currentPagesize != pageSizeInput.currentPageSize) {
@@ -128,13 +122,14 @@ namespace Dota2.ShopSystem
                 Debug.Log("Receive Data : " + downloadedText);
                 shop.itemList = JsonConvert.DeserializeObject<List<ItemData>>(downloadedText);
             }
+            maxShopPage = Mathf.Ceil((shop.GetItemsByType((ItemType)currentCategoryIndex).Length / currentPagesize)) - 1.0f;
+            RefreshUI();
         }
 
         [ContextMenu(nameof(LoadScoreFromGoogleDrive))]
         void LoadScoreFromGoogleDrive()
         {
             StartCoroutine(LoadScoreRoutine(onlineLoadPath));
-            RefreshUI();
         }
 
         [ContextMenu(nameof(RefreshUI))]
@@ -160,9 +155,8 @@ namespace Dota2.ShopSystem
             {
                 if (i >= startIndexToDisplay && i < endIndexToDisplay)
                 {
-                    uiDataList.Add(new UIItem_Data(item, null));
+                    uiDataList.Add(new UIItem_Data(item));
                 }
-
                 i++;
             }
             ui.SetItemList(uiDataList.ToArray());
