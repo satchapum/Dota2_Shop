@@ -1,8 +1,9 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.EventSystems;
 using UnityEngine;
-using UnityEngine.UI;
+using Newtonsoft.Json;
+using UnityEngine;
+using UnityEngine.Networking;
+
 
 namespace Dota2.ShopSystem
 {
@@ -39,6 +40,11 @@ namespace Dota2.ShopSystem
                 RefreshUI();
             }
             
+        }
+        void TestJsonConvert()
+        {
+            var scoreJson = JsonConvert.SerializeObject(playerScoreList);
+            Debug.Log(scoreJson);
         }
         public void CategoryButton(GameObject nameCategoryButton)
         {
