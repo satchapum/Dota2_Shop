@@ -3499,205 +3499,205 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 4fde231376c4e87479e4dd7dfa6ebe0d, type: 3}
   - displayName: Sacred Relic
     icon: {fileID: 21300000, guid: 36050e3611b90b34082e2a313281f312, type: 3}
-  - displayName: Iron Branch
+  - displayName: Magic Wand
+    icon: {fileID: 21300000, guid: 7d3e2e4d9d27b8049959a0b2f3c829a1, type: 3}
+  - displayName: Bracer
+    icon: {fileID: 21300000, guid: 527d214b0d896dd49af64c2212bf6391, type: 3}
+  - displayName: Null Talisman
+    icon: {fileID: 21300000, guid: f06125bebe2503a4bbc2320557c94dbd, type: 3}
+  - displayName: Wraith Band
+    icon: {fileID: 21300000, guid: 58aa0ac0e1412674aa8ac653e2131204, type: 3}
+  - displayName: Soul Ring
+    icon: {fileID: 21300000, guid: f20f96a579c0c6d43a5efda980e41c8d, type: 3}
+  - displayName: Orb of Corrosion
+    icon: {fileID: 21300000, guid: e1fd1851b64137d4b91d1d57e7ee7b81, type: 3}
+  - displayName: Falcon Blade
+    icon: {fileID: 21300000, guid: 633f47f267bfd0644b397dc8ccc9074a, type: 3}
+  - displayName: Perseverance
+    icon: {fileID: 21300000, guid: cd001234d745a7c4b90a582c20dcfc27, type: 3}
+  - displayName: Power Treads
+    icon: {fileID: 21300000, guid: 9324b06eb2a4c3044babbe91fc7f4bc5, type: 3}
+  - displayName: Oblivion Staff
+    icon: {fileID: 21300000, guid: 79c6901c5be41ba42a87367203a666e7, type: 3}
+  - displayName: Phase Boots
+    icon: {fileID: 21300000, guid: 308280f1aa88f304f9d19f5103549a84, type: 3}
+  - displayName: Mask of Madness
+    icon: {fileID: 21300000, guid: c1a8ade55491d7742b29c6af1f88f4d2, type: 3}
+  - displayName: Hand of Midas
+    icon: {fileID: 21300000, guid: 532a5eb7d7fb28746ab179f7c9a2833a, type: 3}
+  - displayName: Boots of Travel
+    icon: {fileID: 21300000, guid: 36a1e123749d160458e4b57a7ff56f1c, type: 3}
+  - displayName: Helm of the Dominator
+    icon: {fileID: 21300000, guid: 7756a5b70d1579e4c8aaa85f64ba1082, type: 3}
+  - displayName: Moon Shard
+    icon: {fileID: 21300000, guid: f990dd4ed4505c84cbb119957f4bf554, type: 3}
+  - displayName: Buckler
+    icon: {fileID: 21300000, guid: bd2f3d70e7cc47845b45c8698a89d9f1, type: 3}
+  - displayName: Headdress
+    icon: {fileID: 21300000, guid: adadb814188afe54f8d55d79e2d5e7fb, type: 3}
+  - displayName: Ring of Basilius
+    icon: {fileID: 21300000, guid: 36273ed4075b8504a9441f2ea46e267e, type: 3}
+  - displayName: Urn of Shadows
+    icon: {fileID: 21300000, guid: 3fab0efddc4e0984d8a9e66b3d522464, type: 3}
+  - displayName: 'Tranquil Boots '
+    icon: {fileID: 21300000, guid: f278cc0c1b085e9449ffc7601f8fbda1, type: 3}
+  - displayName: Medallion of Courage
+    icon: {fileID: 21300000, guid: e5ae333fd67073049ac7448760239da4, type: 3}
+  - displayName: Arcane Boots
+    icon: {fileID: 21300000, guid: 611b56232288091488cc6ae8854a81ae, type: 3}
+  - displayName: Pavise
+    icon: {fileID: 21300000, guid: 30a2df2bcd1fcc141ac4d81d32c94360, type: 3}
+  - displayName: Drum of Endurance
+    icon: {fileID: 21300000, guid: b8153bf11c0e19942a1c0443a7830632, type: 3}
+  - displayName: Mekansm
+    icon: {fileID: 21300000, guid: f6f9fac1c4f318447893b65333c02985, type: 3}
+  - displayName: Holy Locket
+    icon: {fileID: 21300000, guid: f24b5d510c80cd9448c90096db1c719c, type: 3}
+  - displayName: Vladmir's Offering
+    icon: {fileID: 21300000, guid: cb5b2b4f65765644eb7a1389a7cbad73, type: 3}
+  - displayName: Spirit Vessel
+    icon: {fileID: 21300000, guid: e5f08b258dafd98478a8d809533acaa9, type: 3}
+  - displayName: Pipe of Insight
+    icon: {fileID: 21300000, guid: e7c3273c3da7955429dcec22f4429584, type: 3}
+  - displayName: Boots of Bearing
+    icon: {fileID: 21300000, guid: 021c6833655eca14da07a1d860d8437e, type: 3}
+  - displayName: Guardian Greaves
+    icon: {fileID: 21300000, guid: c5e2377834923684391a09c679658708, type: 3}
+  - displayName: Crystalys
+    icon: {fileID: 21300000, guid: 054b5d7246d26e34b8df393a5bdc9236, type: 3}
+  - displayName: Meteor Hammer
+    icon: {fileID: 21300000, guid: 661583ed170ba864fb652f4a0f97cfe5, type: 3}
+  - displayName: Armlet of Mordiggian
+    icon: {fileID: 21300000, guid: 9da8cb0e72b978a4b98f5b12b3eb9ea7, type: 3}
+  - displayName: Skull Basher
+    icon: {fileID: 21300000, guid: 13e60e0002007a6449f07b0b186a074c, type: 3}
+  - displayName: Shadow Blade
+    icon: {fileID: 21300000, guid: 7656aab180dfcdf489e981e8b3759f3e, type: 3}
+  - displayName: Desolator
+    icon: {fileID: 21300000, guid: 6c31886a5ce89514cac7efa5c37ca954, type: 3}
+  - displayName: Battle Fury
+    icon: {fileID: 21300000, guid: 14310071f0130d046be52e212922d581, type: 3}
+  - displayName: Nullifier
+    icon: {fileID: 21300000, guid: 0554ac48209360345bd0c4fbc65c87be, type: 3}
+  - displayName: Ethereal Blade
+    icon: {fileID: 21300000, guid: 07d19c23db839f04d8b1c3d6f7f82984, type: 3}
+  - displayName: Radiance
+    icon: {fileID: 21300000, guid: d30a4b64c50dd0641aec7accc719568c, type: 3}
+  - displayName: Monkey King Bar
+    icon: {fileID: 21300000, guid: bceed4f600896cf4ca7f0eeb0210a983, type: 3}
+  - displayName: Butterfly
+    icon: {fileID: 21300000, guid: f48fe40f9e6bf7e45b5fcab102519ebe, type: 3}
+  - displayName: Daedalus
+    icon: {fileID: 21300000, guid: f57f6c79ab32d824e8b7abc9b6ea85fa, type: 3}
+  - displayName: Silver Edge
+    icon: {fileID: 21300000, guid: 4a8d4b9f2b1623a45bb35164dd0887b3, type: 3}
+  - displayName: Divine Rapier
+    icon: {fileID: 21300000, guid: c7c18c1649987f947a6dd0e46eb3ab93, type: 3}
+  - displayName: Disperser
+    icon: {fileID: 21300000, guid: 9f91e7f2eda17c140bb427103ef9661d, type: 3}
+  - displayName: Abyssal Blade
+    icon: {fileID: 21300000, guid: 3d2b901db2beaa84689b879e6c6ceadb, type: 3}
+  - displayName: Bloodthorn
+    icon: {fileID: 21300000, guid: 6a4480e5eda616544855972168e83d8b, type: 3}
+  - displayName: Arcane Ring
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Broom Handle
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Duelist Gloves
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Faded Broach
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Fairy's Trinket
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Lance of Pursuit
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Occult Bracelet
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Pig Pole
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Seeds of Serenity
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Spark of Courage
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Trusty Shovel
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Tumbler's Toy
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Bullwhip
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Dragon Scale
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Eye of the Vizier
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Gossamer Cape
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Grove Bow
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Orb of Destruction
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Philosopher's Stone
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Ring of Aquila
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Specialist's Array
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Ceremonial Robe
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Cloak of Flames
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Dandelion Amulet
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Defiant Shell
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Elven Tunic
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Enchanted Quiver
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Psychic Headband
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Quickening Charm
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Titan Sliver
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Vindicator's Axe
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Ascetic's Cap
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Havoc Hammer
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Martyr's Plate
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Mind Breaker
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Ninja Gear
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Penta-Edged Sword
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Spell Prism
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Stormcrafter
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Timeless Relic
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Trickster Cloak
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Arcanist's Armor
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Book of Shadows
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Book of the Dead
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Ex Machina
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Fallen Sky
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Force Boots
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Giant's Ring
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Pirate Hat
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
-    icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
-  - displayName: Iron Branch
+  - displayName: Stygian Desolator
     icon: {fileID: 21300000, guid: f82d78bad7a7b61459efc8e6efb2de94, type: 3}
   itemList: []
 --- !u!1 &1584293661
