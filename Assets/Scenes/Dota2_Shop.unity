@@ -3539,7 +3539,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 36273ed4075b8504a9441f2ea46e267e, type: 3}
   - displayName: Urn of Shadows
     icon: {fileID: 21300000, guid: 3fab0efddc4e0984d8a9e66b3d522464, type: 3}
-  - displayName: 'Tranquil Boots '
+  - displayName: Tranquil Boots
     icon: {fileID: 21300000, guid: f278cc0c1b085e9449ffc7601f8fbda1, type: 3}
   - displayName: Medallion of Courage
     icon: {fileID: 21300000, guid: e5ae333fd67073049ac7448760239da4, type: 3}
