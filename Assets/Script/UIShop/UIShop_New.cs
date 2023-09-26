@@ -65,6 +65,7 @@ public class UIShop_New : UIShopAbs
         newShopUI.blocksRaycasts = true;
     }
 
+
     public override void ShowItemDescription(Vector3 position)
     {
         description.SetActive(true);
