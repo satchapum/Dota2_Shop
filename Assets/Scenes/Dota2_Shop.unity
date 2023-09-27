@@ -971,6 +971,7 @@ GameObject:
   m_Component:
   - component: {fileID: 348002769}
   - component: {fileID: 348002771}
+  - component: {fileID: 348002772}
   m_Layer: 5
   m_Name: ItemGroup
   m_TagString: Untagged
@@ -1023,6 +1024,18 @@ MonoBehaviour:
   m_Spacing: {x: 10, y: 10}
   m_Constraint: 1
   m_ConstraintCount: 5
+--- !u!225 &348002772
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348002768}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &396750606
 GameObject:
   m_ObjectHideFlags: 0
@@ -4040,6 +4053,7 @@ MonoBehaviour:
   itemUIPrefab: {fileID: 658225149}
   itemUIList: []
   description: {fileID: 3274836227172305244}
+  oldShopUI: {fileID: 348002772}
 --- !u!1 &1712008769
 GameObject:
   m_ObjectHideFlags: 0
@@ -4776,6 +4790,8 @@ MonoBehaviour:
   - {fileID: 1669871368}
   - {fileID: 528301452}
   ItemListPresenter: {fileID: 1561715983}
+  newUIShop: {fileID: 1395844284}
+  oldUIShop: {fileID: 348002772}
   shopTypeIndex: 0
 --- !u!224 &2001168535
 RectTransform:
