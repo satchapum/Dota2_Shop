@@ -9,6 +9,7 @@ public class UIShop_Old : UIShopAbs
     [SerializeField] UIItem itemUIPrefab;
     [SerializeField] List<UIItem> itemUIList = new List<UIItem>();
     [SerializeField] GameObject description;
+    [SerializeField] CanvasGroup oldShopUI;
     
     void Start()
     {
@@ -38,7 +39,7 @@ public class UIShop_Old : UIShopAbs
             newItemUI.transform.localScale = Vector3.zero;
 
             newItemUI.transform.DOScale(1f, 1f);
-
+            oldShopUI.alpha = 1;
             newItemUI.gameObject.SetActive(true);
 
             itemUIList.Add(newItemUI);

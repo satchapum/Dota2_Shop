@@ -1,4 +1,5 @@
 using UnityEngine;
+using DG.Tweening;
 
 namespace Dota2.ShopSystem
 {
@@ -6,15 +7,38 @@ namespace Dota2.ShopSystem
     {
         [SerializeField] public UIShopAbs[] shopType;
         [SerializeField] ItemListPresenter ItemListPresenter;
+        [SerializeField] CanvasGroup newUIShop;
+        [SerializeField] CanvasGroup oldUIShop;
         public int shopTypeIndex = 0;
 
         public void OnButtonShopTypeClick(int inputShopTypeIndex)
         {
-            ClearAllItemUIs();
             shopTypeIndex = inputShopTypeIndex;
+            if (shopTypeIndex == 0) 
+            { 
+                FadeNewUIShop();    
+            }
+            else if (shopTypeIndex == 1) 
+            { 
+                FadeOldUIShop();
+            }
+            ClearAllItemUIs();
             ItemListPresenter.RefreshUI();
         }
 
+        public void FadeNewUIShop()
+        {
+            newUIShop.alpha = 1;
+            newUIShop.blocksRaycasts = false;
+            newUIShop.DOFade(0, 3f);
+        }
+
+        public void FadeOldUIShop()
+        {
+            oldUIShop.alpha = 1;
+            oldUIShop.blocksRaycasts = false;
+            oldUIShop.DOFade(0, 3f);
+        }
         public void ClearAllItemUIs()
         {
             shopType[shopTypeIndex].ClearAllItemUIs();
