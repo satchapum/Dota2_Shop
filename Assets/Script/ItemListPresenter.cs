@@ -5,10 +5,12 @@ using UnityEngine;
 using UnityEngine.Networking;
 using System.IO;
 using System.Collections;
+using UnityEngine.UI;
+using TMPro;
 
 namespace Dota2.ShopSystem
 {
-
+    
     public class ItemListPresenter : MonoBehaviour
     {
         [SerializeField] public int currentCategoryIndex;
@@ -30,6 +32,9 @@ namespace Dota2.ShopSystem
         [SerializeField] float maxShopPage = 0.0f;
         [SerializeField] List<Category> categoryList;
 
+        [SerializeField] GameObject loadingScene;
+        [SerializeField] Slider slider;
+        [SerializeField] TMP_Text text;
         private void Awake()
         {
             LoadScoreFromGoogleDrive();
@@ -104,13 +109,18 @@ namespace Dota2.ShopSystem
         }
         IEnumerator LoadScoreRoutine(string url)
         {
-            var webRequest = UnityWebRequest.Get(url);
-
-            //Get download progress
-            var progress = webRequest.downloadProgress;
-            Debug.Log(progress);
-
-            yield return webRequest.SendWebRequest();
+            UnityWebRequest webRequest = UnityWebRequest.Get(url);
+            DownloadHandler handle = webRequest.downloadHandler;
+            loadingScene.SetActive(true);
+            webRequest.SendWebRequest();
+            while (!webRequest.isDone)
+            {
+                slider.value = webRequest.downloadProgress;
+                text.text = "Downloading: " + (int)(webRequest.downloadProgress * 100f) + "%";
+                Debug.Log("0");
+                yield return null;
+            }
+            loadingScene.SetActive(false);
 
             if (webRequest.result != UnityWebRequest.Result.Success)
             {
